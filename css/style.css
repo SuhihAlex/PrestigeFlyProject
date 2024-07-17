@@ -1,0 +1,121 @@
+@font-face {
+    font-family: "Neue Montreal", sans-serif;
+    src: url(../fonts/NeueMontreal-Regular.woff2) format(woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Neue Montreal", sans-serif;
+    src: url(../fonts/NeueMontreal-Medium.woff2) format(woff2);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Neue Montreal", sans-serif;
+    src: url(../fonts/NeueMontreal-Bold.woff2) format(woff2);
+    font-weight: 700;
+}
+
+/*HEADER*/
+
+.header {
+    position: absolute;
+    padding-top: 30px;
+    z-index: 100;
+}
+
+.header__block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__block-logo {
+    display: flex;
+    align-items: center;
+    margin-right: 298px;
+}
+
+.nav {
+    margin-right: 113px;
+}
+
+.nav__list {
+    display: flex;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 70px;
+    padding: 8px 43px;
+}
+
+.nav__item {
+    margin-right: 52px;
+}
+
+.nav__item:last-child {
+    margin-right: 0;
+}
+
+.nav__link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 178%;
+    text-align: center;
+    color: var(--white-color);
+}
+
+.nav__link-option {
+    position: relative;
+    width: 109px;
+}
+
+.nav__link-option::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 10px;
+    height: 6px;
+    background-image: url(../img/Vector.svg);
+}
+
+.contact__info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact__info-link {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    padding: 10px 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 178%;
+    text-align: center;
+    color: var(--white-color);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.contact__info-link img {
+    margin-right: 10px;
+}
+
+.contact__info-btn {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    padding: 9px 19px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 178%;
+    text-align: center;
+    color: var(--white-color);
+    background: var(--main-color);
+}
+
+/*HERO__SECTION*/
+
+.hero__section {
+    position: relative;
+    height: 900px;
+    background-image: url(../img/hero-img.png);
+    background-size: cover;
+}
