@@ -429,8 +429,7 @@
 
 .chat__content {
     display: none;
-    background-color: white;
-    border: 1px solid #007bff;
+    background-color: var(--white-color);
     border-top: none;
 }
 
