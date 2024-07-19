@@ -111,4 +111,80 @@ testiNextButton.addEventListener('click', testiNextSlide);
 testiMoveSlider(testiCurrentIndex);
 
 
+ document.addEventListener('DOMContentLoaded', function () {
+            const openModalBtn = document.querySelector('.contact__info-btn');
+            const closeModalBtn = document.querySelector('.modal__close');
+            const modal = document.querySelector('.modal');
+            const overlay = document.createElement('div');
+            overlay.className = 'modal-overlay';
+            document.body.appendChild(overlay);
 
+            // Функция для открытия модального окна
+            function openModal() {
+                modal.classList.add('show');
+                overlay.classList.add('show');
+            }
+
+            // Функция для закрытия модального окна
+            function closeModal() {
+                modal.classList.remove('show');
+                overlay.classList.remove('show');
+            }
+
+            // Открытие модального окна при нажатии на кнопку
+            openModalBtn.addEventListener('click', openModal);
+
+            // Закрытие модального окна при нажатии на крестик
+            closeModalBtn.addEventListener('click', closeModal);
+
+            // Закрытие модального окна при нажатии на затемнение
+            overlay.addEventListener('click', closeModal);
+        });
+
+        
+
+
+const slides = document.querySelector('.dropdown__slides');
+const slide = document.querySelectorAll('.dropdown__slide');
+const prevButton = document.querySelector('.dropdown__nav-btn.prev');
+const nextButton = document.querySelector('.dropdown__nav-btn.next');
+const pagination = document.querySelector('.dropdown__pagination');
+let currentIndex = 0;
+
+// Create pagination buttons
+slide.forEach((_, index) => {
+const button = document.createElement('button');
+button.addEventListener('click', () => goToSlide(index));
+pagination.appendChild(button);
+});
+
+const paginationButtons = pagination.querySelectorAll('button');
+updatePagination();
+
+function goToSlide(index) {
+slides.style.transform = `translateX(-${index * 100}%)`;
+currentIndex = index;
+updatePagination();
+}
+
+function updatePagination() {
+paginationButtons.forEach((button, index) => {
+button.classList.toggle('active', index === currentIndex);
+});
+}
+
+function showNextSlide() {
+currentIndex = (currentIndex + 1) % slide.length;
+goToSlide(currentIndex);
+}
+
+function showPrevSlide() {
+currentIndex = (currentIndex - 1 + slide.length) % slide.length;
+goToSlide(currentIndex);
+}
+
+nextButton.addEventListener('click', showNextSlide);
+prevButton.addEventListener('click', showPrevSlide);
+
+// // Auto-play functionality (optional)
+// // setInterval(showNextSlide, 5000);

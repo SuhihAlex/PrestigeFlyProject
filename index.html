@@ -20,7 +20,63 @@
                 <nav class="nav">
                     <ul class="nav__list list-reset">
                         <li class="nav__item nav__link-option">
-                            <a href="#" class="nav__link">Best Deals</a>
+                            <a href="#" class="nav__link" id="bestDealsLink">Best Deals</a>
+                        <div class="dropdown__container">
+                            <div class="dropdown__block-left">
+                                <ul class="list-reset dropdown__list">
+                                    <li class="dropdown__item dropdown__item-active">
+                                        <a href="#" class="dropdown__link dropdown__link-active">Business</a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="#" class="dropdown__link">First Class</a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="#" class="dropdown__link">Premium</a>
+                                    </li>
+                                </ul>
+                                <a href="#" class="dropdown__link-view">View All</a>
+                            </div>
+                            <div class="dropdown__block-right">
+                                <div class="dropdown__slider">
+                                    <div class="dropdown__slides">
+                                        <div class="dropdown__slide">
+                                            <img src="img/drop-img.png" alt="Slide 1">
+                                            <div class="dropdown__slide-featured">
+                                                <div class="dropdown__slide-featured--left">
+                                                    <span>Featured</span>
+                                                </div>
+                                                <div class="dropdown__slide-featured--right">
+                                                    -42%
+                                                </div>
+                                            </div>
+                                            <div class="dropdown__slide-descr">
+                                                <div class="dropdown__slide-descr--left">
+                                                    <span class="dropdown__slide-class">first class flights to</span>
+                                                    <h4 class="dropdown__slide-town">Dubai</h4>
+                                                </div>
+                                                <div class="dropdown__slide-descr--right">
+                                                    <div class="dropdown__slide-price">
+                                                        <span class="dropdown__slide-old">$2,486</span>
+                                                        <span class="dropdown__slide-new">$1,256</span>
+                                                    </div>
+                                                    <a href="#" class="dropdown__slide-link"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown__slide">
+                                            <img src="img/drop-img.png" alt="Slide 2">
+                                        </div>
+                                        <div class="dropdown__slide">
+                                            <img src="img/drop-img.png" alt="Slide 3">
+                                        </div>
+                                    </div>
+                                    <div class="dropdown__pagination"></div>
+                                    <div class="dropdown__nav-btn prev"><img src="img/arrow-prev.png" alt="Prev"></div>
+                                    <div class="dropdown__nav-btn next"><img src="img/arrow-next.png" alt="Next"></div>
+                                </div>
+                                
+                            </div>
+                        </div>
                         </li>
                         <li class="nav__item">
                             <a href="#" class="nav__link">Blog</a>
@@ -33,6 +89,8 @@
                         </li>
                     </ul>
                 </nav>
+
+
                 <div class="contact__info">
                     <a href="tel:3055048935" class="contact__info-link"><img src="img/phone.svg" alt="Phone">(305) 504-8935</a>
                     <button class="btn-reset contact__info-btn">Request a Call 24/7</button>
@@ -40,6 +98,41 @@
             </div>
         </div>
     </header>
+    <div class="modal">
+        <div class="modal__block">
+            <img src="img/modal-img.png" alt="Modal Image">
+            <div class="modal__content">
+                <div class="modal__content-title">
+                    <h4 class="modal__title">Call to Speak</h4>
+                    <p class="modal__subtitle">Live concierge available 24/7</p>
+                    <a href="tel:3055048935" class="modal__tel">(305) 504 - 8935</a>
+                </div>
+                <div class="modal__content-request">
+                    <div class="modal__content-request--title">
+                        <h4 class="modal__title">Request a free callback</h4>
+                        <p class="modal__subtitle">Get a call from travel expert and free advice within minutes.</p>
+                    </div>
+                    <form class="modal__form">
+                        <div class="modal__block-phone">
+                            <label for="phone" class="modal__form-label">Phone</label>
+                            <input type="tel" class="modal__form-phone" placeholder="Enter Your Phone">
+                        </div>
+                        <button class="modal__btn btn-reset" type="submit">Request now</button>
+                    </form>
+                    <div class="modal__block-text">
+                        <p class="modal__text">
+                            *One of our Travel Agents will call you back within the next few minutes. By submitting your phone numbers you agree to
+                            be contacted for travel information via automated phone and text messages. Your consest to recieve such messages is not
+                            a condition of purchase. No Spam & 100% Data Safety
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal__close">
+            <span></span>
+        </div>
+    </div>
     <main>
         <section class="hero">
             <div class="container">
