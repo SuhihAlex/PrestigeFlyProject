@@ -41,10 +41,752 @@
         </div>
     </header>
     <main>
-        <section class="hero__section">
-            
+        <section class="hero">
+            <div class="container">
+                <div class="hero__block">
+                    <div class="hero__content">
+                        <h1 class="hero__title">Business & First Class Flights for Less</h1>
+                        <p class="hero__subtitle">Fly in comfort & feel the difference</p>
+                    </div>
+                    <form action="" class="form__flight-avia">
+                        <div class="form__block-top">
+                            <div class="form__class">
+                                <div class="form__group-class">
+                                    <label for="class">Class</label>
+                                    <select name="class" id="class" class="class__select select" required>
+                                        <option value="premium">Premium</option>
+                                        <option value="first class">First Class</option>
+                                        <option value="business">Business</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form__block-select">
+                                <div class="form__group">
+                                    <label for="trip-type"></label>
+                                    <select name="trip-type" id="trip-type" class="trip__select select" required>
+                                        <option value="round-trip">Round-trip</option>
+                                        <option value="single-trip">Single-trip</option>
+                                    </select>
+                                </div>
+                                <div class="form__group">
+                                    <label for="passanger"></label>
+                                    <select name="passanger" id="passanger" class="passanger__select select" required>
+                                        <option value="one-passanger">1 Passanger</option>
+                                        <option value="two-passanger">2 Passanger</option>
+                                        <option value="three-passanger">3 Passanger</option>
+                                        <option value="four-passanger">4 Passanger</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__block-bottom">
+                            <div class="form__block-direction">
+                                <div class="form__group-origin">
+                                    <label for="origin">Origin</label>
+                                    <select name="origin" id="origin" class="origin__select select" required>
+                                        <option value="origin" selected disabled>Origin</option>
+                                        <option value="bucharest">Bucharest</option>
+                                        <option value="iasi">Iasi</option>
+                                    </select>
+                                </div>
+                                <div class="direction__icon"></div>
+                                <div class="form__group-destination">
+                                    <label for="destination">Destination</label>
+                                    <select name="destination" id="destination" class="destination__select select" required>
+                                        <option value="destination" selected disabled>Destination</option>
+                                        <option value="dubai">Dubai</option>
+                                        <option value="venezia">Venezia</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form__block-date">
+                                <div class="form__group-departure">
+                                    <label for="departure">Departure</label>
+                                    <select name="departure" id="departure" class="departure__select select" required>
+                                        <option value="departure" selected disabled>Departure</option>
+                                    </select>
+                                </div>
+                                <div class="form__group-arrival">
+                                    <label for="arrival">Arrival</label>
+                                    <select name="arrival" id="arrival" class="arrival__select select" required>
+                                        <option value="arrival" selected disabled>Arrival</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button class="form__btn" type="submit">Search <img src="img/search-icon.svg" alt="Search Icon"></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="chat__widget">
+                <div class="chat__header" id="chatHeader">
+                </div>
+                <div class="chat__content" id="chatContent">
+                    <div class="messages" id="messages">
+                        <!-- Здесь будут сообщения -->
+                    </div>
+                    <div class="chat__input">
+                        <input type="text" id="chatInput" placeholder="Type a message...">
+                        <button class="chat__btn" id="sendButton">Send</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="info">
+            <div class="container">
+                    <div class="info__block-title">
+                        <p class="info__text">Get <span>50-67% OFF</span> on Business Class Flights with PrestigeFly</p>
+                        <h3 class="info__title">Top-Ranked Business Class Flight Deals</h3>
+                    </div>
+                    <div class="info__block">
+                        <div class="info__block-top">
+                            <div class="info__block-img">
+                                <img src="img/info-img-dubai.png" alt="Dubai">
+                                <div class="info__featured">
+                                    <img src="img/molnia.png" alt="Molnia">
+                                    <span>Featured</span>
+                                </div>
+                            </div>
+                            <div class="info__top--card">
+                                <div class="dropdown__slide-featured--right info__discount">
+                                    -42%
+                                </div>
+                                <div class="info__title-card">
+                                    <p class="info__card-name">First Class</p>
+                                    <h4 class="info__card-country">Dubai</h4>
+                                </div>
+                                <div class="info__subtitle-card">
+                                    <p>Super hot offer from PrestigeFly, we believe that every journey should be a remarkable experience.</p>
+                                </div>
+                                <div class="info__block-price">
+                                    <div class="info__price-card">
+                                        <span class="price__old">$4,116</span>
+                                        <span class="price__new">$1,782</span>
+                                    </div>
+                                    <a href="#" class="info__price-card--link"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info__block-card">
+                            <ul class="info__card-list list-reset">
+                                <li class="info__card-item">
+                                    <a href="#" class="card__link">
+                                        <div class="info__card-img">
+                                            <img src="img/info/manila-img.png" alt="Manila">
+                                            <div class="dropdown__slide-featured--right info__discount info__card-discount">
+                                                -35%
+                                            </div>
+                                        </div>
+                                        <div class="info__block-link">
+                                            <div class="info__title-card info__card-title">
+                                                <p class="info__card-name">first class</p>
+                                                <h4 class="info__card-country info__card-country--title">Manila</h4>
+                                            </div>
+                                            <div class="info__block-price info__card-price">
+                                                <div class="info__price-card">
+                                                    <span class="price__old card__price-old">$4,116</span>
+                                                    <span class="price__new card__price-new">$1,782</span>
+                                                </div>
+                                                <a href="#" class="info__price-card--link info__card-link"></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="info__card-item">
+                                    <a href="#" class="card__link">
+                                        <div class="info__card-img">
+                                            <img src="img/info/delhi-img.png" alt="Dehli">
+                                            <div class="dropdown__slide-featured--right info__discount info__card-discount">
+                                                -42%
+                                            </div>
+                                        </div>
+                                        <div class="info__block-link">
+                                            <div class="info__title-card info__card-title">
+                                                <p class="info__card-name">Business class</p>
+                                                <h4 class="info__card-country info__card-country--title">Dehli</h4>
+                                            </div>
+                                            <div class="info__block-price info__card-price">
+                                                <div class="info__price-card">
+                                                    <span class="price__old card__price-old">$4,376</span>
+                                                    <span class="price__new card__price-new">$1,787</span>
+                                                </div>
+                                                <a href="#" class="info__price-card--link info__card-link"></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="info__card-item">
+                                    <a href="#" class="card__link">
+                                        <div class="info__card-img">
+                                            <img src="img/info/main-img.png" alt="Frankfurt">
+                                            <div class="dropdown__slide-featured--right info__discount info__card-discount">
+                                                -48%
+                                            </div>
+                                        </div>
+                                        <div class="info__block-link">
+                                            <div class="info__title-card info__card-title">
+                                                <p class="info__card-name">First class</p>
+                                                <h4 class="info__card-country info__card-country--title">Frankfurt / Main</h4>
+                                            </div>
+                                            <div class="info__block-price info__card-price">
+                                                <div class="info__price-card">
+                                                    <span class="price__old card__price-old">$2,486</span>
+                                                    <span class="price__new card__price-new">$1,256</span>
+                                                </div>
+                                                <a href="#" class="info__price-card--link info__card-link"></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="info__card-item">
+                                    <a href="#" class="card__link">
+                                        <div class="info__card-img">
+                                            <img src="img/info/toronto-img.png" alt="Toronto">
+                                            <div class="dropdown__slide-featured--right info__discount info__card-discount">
+                                                -34%
+                                            </div>
+                                        </div>
+                                        <div class="info__block-link">
+                                            <div class="info__title-card info__card-title">
+                                                <p class="info__card-name">First class</p>
+                                                <h4 class="info__card-country info__card-country--title">Toronto</h4>
+                                            </div>
+                                            <div class="info__block-price info__card-price">
+                                                <div class="info__price-card">
+                                                    <span class="price__old card__price-old">$1,556</span>
+                                                    <span class="price__new card__price-new">$987</span>
+                                                </div>
+                                                <a href="#" class="info__price-card--link info__card-link"></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="info__link-block">
+                            <a href="#" class="info__link">Explore All Deals</a>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <section class="work">
+            <div class="container">
+                <div class="work__block-title">
+                    <h2 class="work__title">How it Works?</h2>
+                </div>
+                <div class="work__block-card">
+                    <ul class="work__list list-reset">
+                        <li class="work__item">
+                                <div class="work__icon">
+                                    <svg width="61" height="60" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="work__icon-color"
+                                            d="M15.3569 41.246C20.5818 41.246 24.8173 37.0105 24.8173 31.7856C24.8173 26.5608 20.5818 22.3252 15.3569 22.3252C10.1321 22.3252 5.89648 26.5608 5.89648 31.7856C5.89648 37.0105 10.1321 41.246 15.3569 41.246Z"
+                                            />
+                                        <path class="work__icon-color"
+                                            d="M44.6704 18.9208C49.8952 18.9208 54.1308 14.6853 54.1308 9.46042C54.1308 4.23558 49.8952 0 44.6704 0C39.4455 0 35.21 4.23558 35.21 9.46042C35.21 14.6853 39.4455 18.9208 44.6704 18.9208Z"
+                                            />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M55.8416 43.9506C55.8416 42.7953 56.782 41.8604 57.9346 41.8604C59.09 41.8604 60.0276 42.8008 60.0276 43.9561L60.0192 52.3337C60.0136 56.5673 56.5811 59.9997 52.3448 59.9997H36.9905C35.8351 59.9997 34.8975 59.062 34.8975 57.9067C34.8975 56.7513 35.8351 55.8137 36.9905 55.8137H52.3448C54.2704 55.8137 55.8304 54.2536 55.8332 52.328L55.8416 43.9506Z"
+                                            fill="#BFCAD6" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M4.1997 16.0493C4.1997 17.2046 3.25929 18.1396 2.10395 18.1396C0.948606 18.1396 0.0136719 17.1992 0.0136719 16.0438L0.0220986 7.66618C0.0248346 3.43254 3.46011 0 7.69637 0H28.6181C29.7734 0 30.7111 0.93767 30.7111 2.09301C30.7111 3.24836 29.7734 4.18603 28.6181 4.18603H7.69637C5.7708 4.18603 4.21086 5.74597 4.20802 7.67165L4.1997 16.0493Z"
+                                            fill="#BFCAD6" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd" class="work__icon-color"
+                                            d="M24.4213 40.0239C28.2334 42.8202 30.7115 47.3328 30.7115 52.4174C30.7115 54.5913 29.3413 56.4862 26.8213 57.7894C24.0391 59.2294 19.7023 59.9997 15.3572 59.9997C11.0093 59.9997 6.67258 59.2294 3.89022 57.7894C1.37028 56.4862 0 54.5913 0 52.4174C0 47.3328 2.47813 42.8203 6.2902 40.0239C8.53392 42.4909 11.7655 44.0369 15.3572 44.0369C18.946 44.037 22.1804 42.491 24.4213 40.0239Z"
+                                            />
+                                        <path fill-rule="evenodd" clip-rule="evenodd" class="work__icon-color"
+                                            d="M53.7368 17.6987C57.5488 20.495 60.027 25.0076 60.027 30.0921C60.027 32.2661 58.6567 34.1609 56.1368 35.4641C53.3545 36.9041 49.0177 37.6743 44.6698 37.6743C40.3247 37.6743 35.9879 36.9041 33.2056 35.4641C30.6857 34.1609 29.3154 32.266 29.3154 30.0921C29.3154 25.0075 31.7936 20.4949 35.6056 17.6987C37.8466 20.1657 41.081 21.7117 44.6698 21.7117C48.2614 21.7117 51.4931 20.1657 53.7368 17.6987Z"
+                                            />
+                                    </svg>
+                                </div>
+                                <div class="work__card-descr">
+                                    <h3 class="work__card-title">Connect with us</h3>
+                                    <p class="work__card-subtitle">
+                                        Explore the finest business class flight offers on our website. Call us 24/7 for immediate assistance. Completely FREE!
+                                    </p>
+                                </div>
+                                <a href="#" class="work__card-link">Connect Now</a>
+                            <div class="work__number">
+                                <span>Step 1</span>
+                            </div>
+                        </li>
+                        <li class="work__item">
+                                <div class="work__icon">
+                                    <svg width="61" height="60" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.8147 39.2002C11.8212 35.9407 9.18433 33.2931 5.92505 33.2866C2.66578 33.2801 0.0183225 35.9171 0.0118036 39.1766C0.00528465 42.436 2.64217 45.0837 5.90145 45.0902C9.16072 45.0967 11.8082 42.4597 11.8147 39.2002Z"
+                                            fill="#BFCAD6" />
+                                        <path
+                                            d="M12.874 47.2419C11.5104 45.8795 9.62699 45.0356 7.54644 45.0356C3.38535 45.0356 0.0126953 48.4085 0.0126953 52.5699V58.2422C0.0126953 59.213 0.801133 59.9999 1.77367 59.9999H13.3891C14.37 59.9999 15.162 59.1997 15.1499 58.2205L15.0802 52.5699C15.0801 50.4892 14.2363 48.6056 12.874 47.2419Z"
+                                            fill="#BFCAD6" />
+                                        <path
+                                            d="M54.1254 45.1118C57.3847 45.0987 60.0163 42.4458 60.0033 39.1864C59.9902 35.9269 57.3375 33.2951 54.0782 33.3082C50.8189 33.3212 48.1873 35.9741 48.2004 39.2336C48.2134 42.4931 50.8661 45.1248 54.1254 45.1118Z"
+                                            fill="#BFCAD6" />
+                                        <path
+                                            d="M52.4786 45.0356C50.3981 45.0356 48.5146 45.8795 47.151 47.2419C45.7887 48.6056 44.9449 50.4892 44.9449 52.5699L44.8751 58.2205C44.8632 59.1997 45.655 59.9999 46.636 59.9999H58.2514C59.2239 59.9999 60.0124 59.213 60.0124 58.2422V52.5699C60.0124 48.4084 56.6397 45.0356 52.4786 45.0356Z"
+                                            fill="#BFCAD6" />
+                                        <path
+                                            d="M0.959719 17.0688L4.31644 18.8162C5.16112 19.2609 6.24042 18.9397 6.69206 18.0705C7.14183 17.2098 6.80726 16.148 5.94499 15.6992L2.58827 13.9518C1.72577 13.5028 0.662297 13.8369 0.212648 14.6975C-0.237117 15.5582 0.0974531 16.6198 0.959719 17.0688Z"
+                                            fill="#BFCAD6" />
+                                        <path
+                                            d="M5.95019 23.4464L2.27823 24.3614C1.33464 24.5965 0.760657 25.5506 0.996204 26.4925C1.22812 27.4418 2.21284 28.0088 3.13124 27.7722L6.8032 26.8572C7.74679 26.6221 8.32077 25.6679 8.08523 24.7261C7.84968 23.784 6.89355 23.211 5.95019 23.4464Z"
+                                            fill="#BFCAD6" />
+                                        <path
+                                            d="M53.3328 18.0704C53.7846 18.9395 54.8637 19.2607 55.7084 18.816L59.0651 17.0686C59.9274 16.6198 60.2618 15.5581 59.8122 14.6973C59.3624 13.8367 58.2991 13.503 57.4366 13.9517L54.0798 15.6991C53.2176 16.1479 52.883 17.2096 53.3328 18.0704Z"
+                                            fill="#BFCAD6" />
+                                        <path
+                                            d="M57.7475 24.3614L54.0755 23.4464C53.1321 23.211 52.176 23.7841 51.9405 24.7261C51.7051 25.6679 52.2789 26.6221 53.2225 26.8572L56.8945 27.7722C57.8129 28.0088 58.7976 27.4417 59.0295 26.4925C59.265 25.5506 58.6911 24.5965 57.7475 24.3614Z"
+                                            fill="#BFCAD6" />
+                                        <path class="work__icon-color"
+                                            d="M22.0469 58.2424C22.0469 59.2127 22.8346 60.0001 23.8079 60.0001H28.2513V40.3136C28.2513 39.3433 29.0402 38.5559 30.0122 38.5559C30.9855 38.5559 31.7732 39.3434 31.7732 40.3136V60.0001H36.2178C37.1898 60.0001 37.9788 59.2126 37.9788 58.2424V32.6968H22.0469V58.2424Z"
+                                             />
+                                        <path class="work__icon-color"
+                                            d="M30.0664 12.4434C33.4257 12.4432 36.2495 9.65074 36.2355 6.22348C36.2355 2.80301 33.4802 0.0292969 30.0664 0.00117187C30.0488 0 30.0299 0 30.0124 0C26.575 0 23.7892 2.78543 23.7892 6.22348C23.7643 9.61242 26.6028 12.4999 30.0664 12.4434Z"
+                                             />
+                                        <path class="work__icon-color"
+                                            d="M53.1495 3.58643C51.6917 2.12756 49.3261 2.12732 47.869 3.58643L40.992 10.4134C39.6842 11.7141 37.915 12.4442 36.0707 12.4442H23.9028C22.0526 12.4442 20.2764 11.7094 18.9674 10.3994L12.155 3.58643C10.6995 2.12779 8.3316 2.12709 6.87566 3.58643C5.41645 5.04412 5.41645 7.40885 6.87566 8.86666L21.5583 23.5529L21.8612 29.1811H38.1535L38.4364 23.5821L53.1495 8.86666C54.6075 7.40897 54.6075 5.04424 53.1495 3.58643Z"
+                                            />
+                                    </svg>
+                                </div>
+                                <div class="work__card-descr">
+                                    <h3 class="work__card-title">We Heed Your Needs</h3>
+                                    <p class="work__card-subtitle">
+                                        Every interaction is individualized with great precision and meticulous attention. Leverage your preferences to your
+                                        benefit.
+                                    </p>
+                                </div>
+                                <a href="#" class="work__card-link">Connect Now</a>
+                            <div class="work__number">
+                                <span>Step 2</span>
+                            </div>
+                        </li>
+                        <li class="work__item">
+                                <div class="work__icon">
+                                    <svg width="70" height="60" viewBox="0 0 70 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="work__icon-color"
+                                            d="M28.8307 19.728C29.2058 19.9418 29.6329 20.0474 30.0644 20.0331C30.5073 19.9924 30.9363 19.8577 31.323 19.638L59.0398 3.46569C58.4373 2.41574 57.5691 1.54278 56.5225 0.934455C55.4759 0.326133 54.2877 0.00386192 53.0772 0H6.92332C5.7128 0.00392571 4.52461 0.32625 3.47805 0.934612C2.43149 1.54297 1.5634 2.41596 0.960938 3.46592L28.8307 19.728Z"
+                                            />
+                                        <path class="work__icon-color"
+                                            d="M60 8.23828V24.2767C57.7796 23.4775 55.4368 23.0714 53.0769 23.0767C47.5711 23.085 42.2932 25.2759 38.4 29.1691C34.5068 33.0623 32.316 38.3402 32.3077 43.846C32.3071 44.6173 32.3534 45.3879 32.4462 46.1537H6.92308C5.08861 46.1483 3.33081 45.4172 2.03364 44.12C0.736472 42.8229 0.00535756 41.0651 0 39.2306V8.23828L26.5154 23.7229C27.5839 24.3072 28.7822 24.6134 30 24.6134C31.2178 24.6134 32.4161 24.3072 33.4846 23.7229L60 8.23828Z"
+                                            />
+                                        <path
+                                            d="M53.0777 27.6919C48.7934 27.6919 44.6846 29.3938 41.6552 32.4232C38.6257 35.4527 36.9238 39.5615 36.9238 43.8457C36.9238 48.13 38.6257 52.2388 41.6552 55.2682C44.6846 58.2977 48.7934 59.9996 53.0777 59.9996C53.6897 59.9996 54.2767 59.7565 54.7095 59.3237C55.1422 58.8909 55.3854 58.3039 55.3854 57.6919C55.3854 57.0799 55.1422 56.4929 54.7095 56.0601C54.2767 55.6273 53.6897 55.3842 53.0777 55.3842C50.7956 55.3842 48.5647 54.7075 46.6672 53.4396C44.7698 52.1718 43.2908 50.3697 42.4175 48.2613C41.5442 46.1529 41.3157 43.8329 41.7609 41.5947C42.2061 39.3565 43.3051 37.3005 44.9187 35.6868C46.5324 34.0731 48.5884 32.9742 50.8266 32.529C53.0649 32.0838 55.3849 32.3123 57.4933 33.1856C59.6016 34.0589 61.4037 35.5378 62.6716 37.4353C63.9394 39.3328 64.6161 41.5636 64.6161 43.8457V46.1534C64.6161 46.7655 64.373 47.3524 63.9402 47.7852C63.5075 48.218 62.9205 48.4611 62.3084 48.4611C61.6964 48.4611 61.1094 48.218 60.6767 47.7852C60.2439 47.3524 60.0008 46.7655 60.0008 46.1534V43.8457C60.0008 42.4765 59.5947 41.138 58.834 39.9995C58.0733 38.861 56.992 37.9736 55.727 37.4497C54.462 36.9257 53.07 36.7886 51.727 37.0557C50.3841 37.3228 49.1505 37.9822 48.1823 38.9504C47.2141 39.9186 46.5548 41.1522 46.2876 42.4951C46.0205 43.8381 46.1576 45.2301 46.6816 46.4951C47.2056 47.7601 48.0929 48.8414 49.2314 49.6021C50.3699 50.3628 51.7084 50.7688 53.0777 50.7688C54.2705 50.7613 55.4406 50.4419 56.4718 49.8425C57.2697 51.1129 58.4594 52.089 59.8611 52.6235C61.2628 53.1579 62.8004 53.2216 64.2415 52.805C65.6826 52.3883 66.9489 51.5139 67.8492 50.3139C68.7494 49.114 69.2346 47.6536 69.2315 46.1534V43.8457C69.2263 39.5631 67.5227 35.4573 64.4944 32.429C61.4661 29.4007 57.3603 27.6971 53.0777 27.6919ZM53.0777 46.1534C52.6213 46.1534 52.1751 46.0181 51.7956 45.7645C51.4161 45.5109 51.1203 45.1505 50.9456 44.7289C50.771 44.3072 50.7253 43.8432 50.8143 43.3955C50.9034 42.9479 51.1232 42.5367 51.4459 42.214C51.7686 41.8912 52.1798 41.6714 52.6275 41.5824C53.0751 41.4933 53.5391 41.539 53.9608 41.7137C54.3825 41.8884 54.7429 42.1842 54.9965 42.5637C55.25 42.9432 55.3854 43.3893 55.3854 43.8457C55.385 44.4577 55.1418 45.0444 54.7091 45.4771C54.2764 45.9098 53.6896 46.1531 53.0777 46.1534Z"
+                                            fill="#BFCAD6" />
+                                    </svg>
+                                </div>
+                                <div class="work__card-descr">
+                                    <h3 class="work__card-title">Review Your Email</h3>
+                                    <p class="work__card-subtitle">
+                                        Receive promptly emailed discounted fares that perfectly match your preferences. Our agents will take into consideration
+                                        every detail.
+                                    </p>
+                                </div>
+                                <a href="#" class="work__card-link">Connect Now</a>
+                            <div class="work__number">
+                                <span>Step 3</span>
+                            </div>
+                        </li>
+                        <li class="work__item">
+                                <div class="work__icon">
+                                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="work__icon-color"
+                                            d="M7.3125 12.6L12.9375 17.2875C13.2527 17.5512 13.6512 17.6953 14.0625 17.6953H49.009C51.3855 17.6953 53.3203 15.7617 53.3203 13.384C53.3203 12.1008 52.7543 10.8926 51.7688 10.0711L48.041 6.96445C47.0941 6.17578 45.8953 5.74219 44.6648 5.74219H19.5844L17.0062 2.58516C15.6656 0.942187 13.6805 0 11.5605 0H8.4375C7.46719 0 6.67969 0.7875 6.67969 1.75781V11.25C6.67969 11.7715 6.91172 12.266 7.3125 12.6Z"
+                                            />
+                                        <path class="work__icon-color"
+                                            d="M12.2039 21.941C11.5336 22.3523 11.2195 23.1598 11.434 23.9156C11.6472 24.6727 12.3387 25.1953 13.125 25.1953H22.9547C24.1324 25.1953 25.2808 24.9633 26.366 24.5062L34.1918 21.2109H13.391L12.2039 21.941Z"
+                                             />
+                                        <path class="work__icon-color"
+                                            d="M24.4918 44.8732V41.7369L22.4308 38.3019C21.9392 37.4827 21.6793 36.5445 21.6793 35.5888V29.4175C16.8741 30.8076 12.4614 33.4023 8.8109 37.0537C6.42473 39.4394 4.4909 42.1512 3.04785 45.0845H6.05066C8.22508 45.0845 10.1488 46.3903 10.9517 48.4111L11.6438 50.1537L14.089 50.9687C16.2459 51.6878 17.6949 53.6983 17.6949 55.9716V60.0001H28.2418V52.0949L25.3775 47.7983C24.7981 46.9294 24.4918 45.9178 24.4918 44.8732Z"
+                                            />
+                                        <path
+                                            d="M44.1797 46.8684V43.125C44.1797 42.6587 44.365 42.2116 44.6946 41.8821L50.3386 36.238C44.767 31.0737 37.5904 28.2422 30 28.2422C28.3754 28.2422 26.7704 28.374 25.1953 28.6283V35.5887C25.1953 35.9072 25.2819 36.22 25.4457 36.4929L27.7573 40.3455C27.9212 40.6188 28.0078 40.9314 28.0078 41.25V44.8731C28.0078 45.2212 28.1099 45.5584 28.303 45.848L31.4626 50.5874C31.6552 50.8761 31.7578 51.2154 31.7578 51.5624V59.9999H38.5547V52.4999C38.5547 51.9121 38.8484 51.3633 39.3375 51.0374L43.397 48.3311C43.8871 48.0043 44.1797 47.4575 44.1797 46.8684Z"
+                                            fill="#BFCAD6" />
+                                        <path
+                                            d="M12.9777 54.3038L9.75668 53.2302C9.26473 53.0662 8.87027 52.6933 8.67891 52.2115L7.68492 49.7089C7.41738 49.0353 6.77602 48.6001 6.05121 48.6001H1.59117C0.545508 51.6679 0 54.9151 0 58.2422C0 59.2125 0.7875 60 1.75781 60H14.1797V55.9714C14.1797 55.2136 13.6966 54.5435 12.9777 54.3038Z"
+                                            fill="#BFCAD6" />
+                                        <path class="work__icon-color"
+                                            d="M52.7788 38.7698L47.6953 43.8533V46.8686C47.6953 48.6357 46.8175 50.2759 45.3471 51.2563L42.0703 53.4408V60.0002H58.2422C59.2125 60.0002 60 59.2127 60 58.2423C60 51.04 57.4514 44.2094 52.7788 38.7698Z"
+                                            />
+                                    </svg>
+                                </div>
+                                <div class="work__card-descr">
+                                    <h3 class="work__card-title">Confirm & Fly</h3>
+                                    <p class="work__card-subtitle">
+                                        Modify or finalize your seat selection, securely pay online, receive your e-tickets via email, and you're all set to
+                                        fly.
+                                    </p>
+                                </div>
+                                <a href="#" class="work__card-link">Connect Now</a>
+                            <div class="work__number">
+                                <span>Step 4</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="contacts__section">
+            <div class="container">
+                <div class="contacts__block-title">
+                    <h2 class="contacts__title"><span>PrestigeFly </span>has earned the trust of thousands of travelers</h2>
+                </div>
+            </div>
+            <div class="contacts__section-content">
+                <div class="contacts__section-content--left">
+                    <img src="img/contacts-sec-img.png" alt="Image">
+                </div>
+                <div class="contacts__section-content--right">
+                    <div class="contacts__section-title">
+                        <h4 class="contacts__section-text">
+                            We are dedicated to providing top-notch personalized assistance to all our clients, 24 hours a day, every day of the
+                            week.
+                        </h4>
+                    </div>
+                    <div class="contacts__section-subtitle">
+                        <p class="contacts__section-title--text">
+                            PrestigeFly doesn't operate website booking engines. Instead, you'll interact with a live person who comprehends your
+                            requirements, negotiates exclusive deals with airlines, and secures attractive fares for you. Our unique fares and
+                            agreements are accessible solely through our direct relationships with major airlines, offered privately due to legal
+                            restrictions. This exclusive access ensures you receive the best price and unparalleled value.
+                        </p>
+                        <a href="#" class="contacts__section-link">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="benefits">
+            <div class="container">
+                <div class="work__block-title benefits__block-title">
+                    <h2 class="work__title benefits__title">Our Benefits</h2>
+                </div>
+                <ul class="list-reset benefits__list">
+                    <li class="benefits__item">
+                        <div class="benefits__item-block">
+                            <img src="img/benefits/premium-icon.svg" alt="Premium">
+                            <div class="benefits__item-content">
+                                <h4 class="benefits__item-title">Premium Offers</h4>
+                                <p class="benefits__item-descr">
+                                    Privately arranged airfare deals from 50+ airlines, featuring discounts of up to 74%.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="benefits__item benefits__item-min">
+                        <div class="benefits__item-block benefits__item-block--min">
+                            <img src="img/benefits/booking-icon.svg" alt="Booking">
+                            <div class="benefits__item-content benefits__item-content--booking">
+                                <h4 class="benefits__item-title benefits__item-title--booking">Last minute bookings</h4>
+                                <p class="benefits__item-descr">
+                                    Book your trip hassle-free, even within hours before departure. Access the lowest fares for any international
+                                    destination on any airline.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="benefits__item">
+                        <div class="benefits__item-block benefits__item-block--support">
+                            <img src="img/benefits/support-icon.svg" alt="Support">
+                            <div class="benefits__item-content">
+                                <h4 class="benefits__item-title benefits__item-title--support">24/7 live support</h4>
+                                <p class="benefits__item-descr">
+                                    Access our 24/7 service to interact with a live person who comprehends your needs and ensures a seamless travel
+                                    experience for you.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="benefits__item">
+                        <div class="benefits__item-block benefits__item-block--exp">
+                            <img src="img/benefits/exp-icon.svg" alt="Experience">
+                            <div class="benefits__item-content benefits__item-content--exp">
+                                <h4 class="benefits__item-title benefits__item-title--exp">12+ years of experience</h4>
+                                <p class="benefits__item-descr">
+                                    More than 145 travel advisors boasting over 12 years of experience in the travel industry. Human expertise instead of
+                                    automated search engines.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="benefits__item benefits__item-min benefits__item-min--replace">
+                        <div class="benefits__item-block benefits__item-block--replace">
+                            <img src="img/benefits/replace-icon.svg" alt="Replace">
+                            <div class="benefits__item-content benefits__item-content--booking">
+                                <h4 class="benefits__item-title benefits__item-title--replace">Replace engines with human expertise</h4>
+                                <p class="benefits__item-descr">
+                                    We don't use website booking engines; instead, you'll interact with a live person to ensure the absolute best price and
+                                    value.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="benefits__item">
+                        <div class="benefits__item-block benefits__item-block--elaborate">
+                            <img src="img/benefits/elaborate-icon.svg" alt="Elaborate">
+                            <div class="benefits__item-content">
+                                <h4 class="benefits__item-title benefits__item-title--elaborate">Elaborate itineraries</h4>
+                                <p class="benefits__item-descr">
+                                    Effortless solutions for complex and customized itineraries tailored specifically to meet your travel requirements.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="benefits__block-link">
+                    <a href="#" class="benefits__link">Request a Quote</a>
+                </div>
+            </div>
+        </section>
+        <section class="blog__section">
+            <div class="container blog__section-container">
+                <div class="work__block-title blog__section-block">
+                    <h2 class="work__title">Latest From The Blog</h2>
+                    <a href="#" class="blog__section-view">View All</a>
+                </div>
+                <div class="slider__container">
+                    <div class="slider__wrapper">
+                        <div class="slider__item">
+                            <img class="slider__img" src="img/slide-1.png" alt="1">
+                            <a href="https://simpleflying.com/dubai-airport-baggage-backlog-flood/" class="slider__view-link" target="_blank">Dubai Airport Is Trying To Recover From A Large Baggage Backlog After Epic Flood</a>
+                        </div>
+                        <div class="slider__item">
+                            <img class="slider__img" src="img/slide-2.png" alt="2">
+                            <a href="#" class="slider__view-link">Air Seychelles & SriLankan Airlines Sign New Codeshare Partnership</a>
+                        </div>
+                        <div class="slider__item">
+                            <img class="slider__img" src="img/slide-2.png" alt="2">
+                            <a href="#" class="slider__view-link">Air Seychelles & SriLankan Airlines Sign New Codeshare Partnership</a>
+                        </div>
+                        <div class="slider__item">
+                            <img class="slider__img" src="img/slide-2.png" alt="2">
+                            <a href="#" class="slider__view-link">Air Seychelles & SriLankan Airlines Sign New Codeshare Partnership</a>
+                        </div>
+                        <div class="slider__item">
+                            <img class="slider__img" src="img/slide-2.png" alt="2">
+                            <a href="#" class="slider__view-link">Air Seychelles & SriLankan Airlines Sign New Codeshare Partnership</a>
+                        </div>
+                        <div class="slider__item">
+                            <img class="slider__img" src="img/slide-2.png" alt="2">
+                            <a href="#" class="slider__view-link">Air Seychelles & SriLankan Airlines Sign New Codeshare Partnership</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__controls">
+                    <div class="slider__pagination"></div>
+                    <div class="slider__control-block">
+                        <button class="slider__control prev slider__control-prev"><img src="img/arrow-link.svg" alt="Arrow Prev"></button>
+                        <button class="slider__control next active"><img src="img/arrow-link.svg" alt="Arrow Next"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials">
+            <div class="container">
+                <div class="info__block-title">
+                    <p class="info__text">Testimonials</p>
+                    <h3 class="info__title">Why Travelers Love PrestigeFly</h3>
+                </div>
+                <div class="slider__control-block slider__control-block--testi">
+                    <button class="slider__control prev slider__control-prev slider__control-testi"><img src="img/arrow-link.svg" alt="Arrow Prev"></button>
+                    <button class="slider__control next active slider__control-testi"><img src="img/arrow-link.svg" alt="Arrow Next"></button>
+                </div>
+            </div>
+            <div class="slider__container-testi">
+                <div class="slider__wrapper-testi">
+                    <div class="slider__item-testi">
+                        <div class="slider__item-content">
+                            <h4 class="slider__item-title">
+                                "Booking my premium flights through PrestigeFly was an absolute game-changer!
+                            </h4>
+                            <p class="slider__item-descr">
+                                I was amazed by the level of personalized service they offered. The team was incredibly helpful, understanding my
+                                preferences and ensuring I got the best deals available. The entire experience was smooth, and I couldn't be happier
+                                with the flight choices they presented. For anyone seeking a premium travel experience, I highly recommend giving
+                                PrestigeFly a try.”
+                            </p>
+                        </div>
+                        <div class="slider__block-user">
+                            <img class="slider__avatar" src="img/testi/Sarah.png" alt="Sarah K" width="64px" height="64px">
+                            <div class="slider__block-info">
+                                <h6 class="slider__name">Sarah K</h6>
+                                <span class="slider__date">July 28, 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__item-testi">
+                        <div class="slider__item-content">
+                            <h4 class="slider__item-title">
+                                "Absolutely thrilled with my experience using PrestigeFly! 
+                            </h4>
+                            <p class="slider__item-descr">
+                                From start to finish, their service was exceptional. Booking premium flights was a breeze, thanks to their knowledgeable
+                                and friendly team. They went above and beyond to secure the best deals for me, and the entire process was seamless.
+                                Highly recommend PrestigeFly for anyone seeking top-notch service and premium travel options!"
+                            </p>
+                        </div>
+                        <div class="slider__block-user">
+                            <img class="slider__avatar" src="img/testi/John.png" alt="John V" width="64px" height="64px">
+                            <div class="slider__block-info">
+                                <h6 class="slider__name">John V</h6>
+                                <span class="slider__date">August 03, 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__item-testi">
+                        <div class="slider__item-content">
+                            <h4 class="slider__item-title">
+                                "I had an amazing experience booking premium flights through PrestigeFly!
+                            </h4>
+                            <p class="slider__item-descr">
+                                The service was outstanding, and the team really went the extra mile to tailor my travel plans to perfection. Their
+                                expertise in securing premium deals is commendable. The process was effortless, and I felt confident knowing that I was
+                                getting the best possible options. I highly recommend PrestigeFly to anyone looking for a luxurious travel experience. ”
+                            </p>
+                        </div>
+                        <div class="slider__block-user">
+                            <img class="slider__avatar" src="img/testi/Alex.png" alt="Alex L" width="64px" height="64px">
+                            <div class="slider__block-info">
+                                <h6 class="slider__name">Alex L</h6>
+                                <span class="slider__date">March 01, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__item-testi">
+                        <div class="slider__item-content">
+                            <h4 class="slider__item-title">
+                                "I had an amazing experience booking premium flights through PrestigeFly!
+                            </h4>
+                            <p class="slider__item-descr">
+                                The service was outstanding, and the team really went the extra mile to tailor my travel plans to
+                                perfection. Their
+                                expertise in securing premium deals is commendable. The process was effortless, and I felt confident knowing
+                                that I was
+                                getting the best possible options. I highly recommend PrestigeFly to anyone looking for a luxurious travel
+                                experience. ”
+                            </p>
+                        </div>
+                        <div class="slider__block-user">
+                            <img class="slider__avatar" src="img/testi/Alex.png" alt="Alex L" width="64px" height="64px">
+                            <div class="slider__block-info">
+                                <h6 class="slider__name">Alex L</h6>
+                                <span class="slider__date">March 01, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__controls slider__controls-testi">
+            </div>
+        </section>
+        <section class="subscribe">
+            <div class="container">
+                <div class="subscribe__wrapper">
+                    <div class="subscribe__block">
+                        <div class="subscribe__block-title">
+                            <h4 class="subscribe__title">Subscribe to Our Newsletter</h4>
+                            <p class="subscribe__subtitle">Be the first to receive updates on our latest sales and exclusive offers unavailable online</p>
+                        </div>
+                        <form action="" class="subscribe__form">
+                            <input type="email" class="subscribe__input" placeholder="Enter your email">
+                            <button class="subscribe__btn" type="submit">Subscribe Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__block">
+                <a href="#" class="footer__link">
+                    <img src="img/logo.svg" alt="Logo">
+                </a>
+                <nav class="footer__nav">
+                    <div class="footer__nav-deals">
+                        <h6 class="footer__nav-name">Best Deals</h6>
+                        <ul class="footer__nav-list list-reset">
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">Business</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">First Class</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">Premium</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-explore">
+                        <h6 class="footer__nav-name">Explore</h6>
+                        <ul class="footer__nav-list list-reset">
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">Blog</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-connect">
+                        <h6 class="footer__nav-name">Connect</h6>
+                        <ul class="footer__nav-list list-reset">
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">Contact Us</a>
+                            </li>
+                        </ul>
+                        <div class="footer__contacts-block">
+                            <a href="mail:info@prestigefly.com" class="footer__contacts footer__contacts-mail">info@prestigefly.com</a>
+                            <a href="tel:3055048935" class="footer__contacts footer__contacts-tel">(305) 504-8935</a>
+                        </div>
+                    </div>
+                    <div class="footer__block-info">
+                        <span class="footer__address">500 E Broward blvd, Ste 1350,
+                        Fort Lauderdale, Florida
+                        33394 Business Travel Group LLC
+                        </span>
+                        <div class="footer__block-socials">
+                            <a href="#" class="social__link">
+                                <img src="img/footer/facebook.svg" alt="Facebook">
+                            </a>
+                            <a href="#" class="social__link">
+                                <img src="img/footer/linkedin.svg" alt="Linkedin">
+                            </a>
+                            <a href="#" class="social__link">
+                                <img src="img/footer/instagram.svg" alt="Instagram">
+                            </a>
+                            <a href="#" class="social__link">
+                                <img src="img/footer/twitter.svg" alt="Twitter">
+                            </a>
+                            <a href="#" class="social__link">
+                                <img src="img/footer/pinterest.svg" alt="Pinterest">
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+                <div class="footer__block-privacy">
+                    <a href="#" class="footer__privacy-link">Terms & Conditions</a>
+                    <a href="#" class="footer__privacy-link">Privacy Policy</a>
+                </div>
+                <div class="footer__block-copy">
+                    <p class="footer__copy">
+                        All displayed fares are quoted in USD and encompass all taxes, fees, and relevant surcharges. Prices are based on
+                        business class weekday travel (Monday - Thursday) originating from the USA and may vary depending on the chosen class of
+                        service,departure city, airline, and route. Typically, the lowest transatlantic fares originate from the East Coast,
+                        transpacific fares from the West Coast, and fares to Latin America from Florida.PrestigeFly may not list certain travel
+                        partners or specific itinerary details online to avoid direct competition with our partners' retail sales. Savings of up
+                        to 67% are based on comparisons with the full unrestricted published prices of major airlines and may fluctuate due to
+                        individual fare rules. Additional baggage charges might be imposed by some airlines. Fares are subject to seat
+                        availability within the corresponding booking inventory, and seats may be limited or unavailable on specific flights or
+                        dates. Our fares offer a flexible booking policy allowing free exchange and/or cancellation with our partner airlines.
+                        In case of trip cancellation, unless otherwise stated, customers will receive travel credit with the issuing airline for
+                        a period determined by the airline's policy, excluding airline fees. Fare differences may apply in case of exchanges.
+                        Please note that fares and their governing rules are subject to change without prior notice, and other restrictions may
+                        also apply.
+                    </p>
+                    <small class="footer__copy">© 2023 — PrestigeFly.com</small>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="js/main.js?v=1"></script>
 </body>
 </html>
