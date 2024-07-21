@@ -71,21 +71,6 @@
     width: 109px;
 }
 
-.nav__link-option::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 0;
-    width: 10px;
-    height: 6px;
-    background-image: url(../img/Vector.svg);
-    transition: transform 0.3s ease;
-}
-
-.nav__link-option.active::after {
-    transform: rotate(180deg);
-}
-
 .contact__info {
     display: flex;
     align-items: center;
@@ -124,9 +109,36 @@
 
 .dropdown__container {
     display: none;
+    position: absolute;
+    top: 160%;
+    left: -160%;
+    /* Исправлено: отображение контейнера на правильном месте */
     width: 812px;
     border-radius: 30px;
     background: #fff;
+    z-index: 100;
+    box-shadow: 0 14px 100px 0 rgba(0, 0, 0, 0.6);
+}
+
+.dropdown__container.open {
+    display: flex;
+}
+
+.dropdown__arrow {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: url('../img/Vector.svg') no-repeat center center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.dropdown__arrow.rotate {
+    transform: rotate(180deg);
+}
+
+.dropdown__nav-link {
+    padding-right: 13px;
 }
 
 .dropdown__block-left {
@@ -158,6 +170,9 @@
 
 .dropdown__item {
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 30px;
     font-weight: 500;
     font-size: 24px;
@@ -195,8 +210,23 @@
     opacity: 0.1;
 }
 
+.dropdown__item-active .dropdown__link-arrow {
+    display: block;
+}
+
+.dropdown__link-arrow {
+    display: none;
+}
+
+.dropdown__link-arrow.active {
+    display: block;
+    fill: var(--main-color);
+}
+
 .dropdown__link {
     position: relative;
+    width: 100%;
+    height: 100%;
     font-weight: 500;
     font-size: 24px;
     line-height: 142%;
@@ -223,13 +253,25 @@
     min-width: 210px;
     display: inline-flex;
     justify-content: center;
+    transition: color .3s ease, background .3s ease;
+}
+
+.dropdown__link-view:hover {
+    color: var(--white-color);
+    background-color: var(--main-color);
+    border: 1px solid transparent;
 }
 
 .dropdown__slider {
+    display: none;
     position: relative;
     width: 521px;
     max-width: 800px;
     overflow: hidden;
+}
+
+.dropdown__slider.active {
+    display: block;
 }
 
 .dropdown__slides {
@@ -2195,4 +2237,326 @@
 .modal.show,
 .modal-overlay.show {
     display: block;
+}
+
+
+                                                    /*====================== About-Page ==================*/
+
+.hero__about-page {
+    margin-bottom: 100px;
+    max-height: 611px;
+    background-image: url(../img/about-page/hero-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.hero__block-about {
+    display: flex;
+    justify-content: center;
+    padding-top: 272px;
+}
+
+.hero__title-about {
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.chat__none {
+    display: none;
+}
+
+                                                            /*=============== Team ===============*/
+
+.team {
+    padding-bottom: 100px;
+}
+
+.team__block {
+    display: flex;
+    align-items: center;
+    gap: 151px;
+}
+
+.team__content {
+    max-width: 477px;
+}
+
+.team__block-title {
+    margin-bottom: 37px;
+}
+
+.team__subtitle {
+    margin: 0;
+    margin-bottom: 3px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 144%;
+    color: #000;
+}
+
+.team__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+    letter-spacing: 0.02em;
+    color: #000;
+}
+
+.team__title span {
+    color: var(--main-color);
+}
+
+.team__descr {
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 160%;
+    color: #000;
+}
+
+                                                        /*=============== Journey ===============*/
+
+.journey {
+    padding-bottom: 112px;
+}
+
+.journey__top-content {
+    padding-top: 202px;
+    max-width: 442px;
+}
+
+.journey__top-title {
+    margin: 0;
+    margin-bottom: 49px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 100%;
+    color: var(--white-color);
+}
+
+.journey__top-descr {
+    margin: 0;
+    margin-bottom: 60px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 160%;
+    color: var(--white-color);
+}
+
+.journey__top-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    padding: 16px 30px;
+    min-width: 180px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 162%;
+    color: #000;
+    background-color: var(--white-color);
+}
+
+.journey__bottom-content {
+    padding-top: 122px;
+    max-width: 501px;
+}
+
+.journey__bottom-title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+    letter-spacing: 0.02em;
+    color: #000;
+}
+
+.journey__bottom-subtitle {
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 160%;
+    color: #000;
+}
+
+.journey__block-top {
+    position: relative;
+    min-height: 800px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: var(--main-color);
+}
+
+.journey__block-top::before {
+    content: '';
+    position: absolute;
+    right: 106px;
+    bottom: 48px;
+    width: 69px;
+    height: 50px;
+    background-image: url(../img/about-page/label.png);
+    background-repeat: no-repeat;
+    z-index: 100;
+}
+
+.journey__block-top img {
+    position: absolute;
+    right: 60px;
+    bottom: 0;
+}
+
+.journey__block-bottom {
+    position: relative;
+    min-height: 432px;
+    background-color: var(--white-color);
+}
+
+.journey__block-bottom img {
+    position: absolute;
+    left: 0;
+}
+
+.journey__bottom-block {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+                                                                 /*=============== Stats ===============*/
+
+.stats {
+    padding-bottom: 100px;
+}
+
+.stats__block {
+    display: flex;
+    align-items: center;
+}
+
+.stats__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 108px;
+    padding: 0 56px;
+}
+
+.stats__item {
+    position: relative;
+    padding-right: 106px;
+}
+
+.stats__item:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 1px;
+    height: 58px;
+    background-color: #000;
+    opacity: 0.1;
+}
+
+.stats__item:last-child {
+    padding: 0;
+}
+
+.stats__num {
+    display: block;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--main-color);
+}
+
+.stats__name {
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 144%;
+    text-align: center;
+    color: #000;
+}
+
+                                                            /*=============== About-Benefits ===============*/
+
+
+.about__benefits {
+    background: #bfcad6;
+}
+
+.about__benefits-block {
+    margin-bottom: 80px;
+    padding-bottom: 60px;
+}
+
+.about__benefits-title {
+    color: #000;
+}
+
+.about__benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 78px;
+}
+
+.about__benefits-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 628px;
+    padding: 55px 64px 47px 64px;
+    border-radius: 20px;
+    background-color: var(--white-color);
+}
+
+.about__benefits-group--title {
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 31px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133%;
+    text-align: center;
+    color: #000;
+}
+
+.about__benefits-descr {
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 160%;
+    text-align: center;
+    color: #000;
+}
+
+.about__benefits-block--link {
+    display: flex;
+    justify-content: center;
+}
+
+.about__benefits-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 239px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 40px;
+    padding: 20px 30px;
+    transition: color .3s ease, background .3s ease;
+}
+
+.about__benefits-link:hover {
+    color: var(--white-color);
+    background-color: var(--main-color);
+    border: 1px solid transparent;
 }

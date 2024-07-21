@@ -29,6 +29,7 @@ document.getElementById('sendButton').addEventListener('click', function() {
 
 
 
+
 // Слайдер для блога
 const blogSliderWrapper = document.querySelector('.slider__wrapper');
 const blogSlides = document.querySelectorAll('.slider__item');
@@ -144,47 +145,146 @@ testiMoveSlider(testiCurrentIndex);
         
 
 
-const slides = document.querySelector('.dropdown__slides');
-const slide = document.querySelectorAll('.dropdown__slide');
-const prevButton = document.querySelector('.dropdown__nav-btn.prev');
-const nextButton = document.querySelector('.dropdown__nav-btn.next');
-const pagination = document.querySelector('.dropdown__pagination');
-let currentIndex = 0;
+document.addEventListener('DOMContentLoaded', () => {
+    const bestDealsLink = document.getElementById('bestDealsLink');
+    const dropdownContainer = document.getElementById('dropdownContainer');
+    const bestDealsArrow = document.getElementById('bestDealsArrow');
+    const dropdownLinks = document.querySelectorAll('.dropdown__link');
+    const sliders = document.querySelectorAll('.dropdown__slider');
+    const slideContainers = {
+        'Business': document.getElementById('businessSlider'),
+        'First Class': document.getElementById('firstClassSlider'),
+        'Premium': document.getElementById('premiumSlider')
+        // Добавьте сюда другие слайдеры, если они есть
+    };
 
-// Create pagination buttons
-slide.forEach((_, index) => {
-const button = document.createElement('button');
-button.addEventListener('click', () => goToSlide(index));
-pagination.appendChild(button);
+    // Функция для показа соответствующего слайдера
+    function showSlider(slider) {
+        sliders.forEach(s => s.classList.remove('active'));
+        slider.classList.add('active');
+    }
+
+    function updateActiveLink(activeLink) {
+    // Найти активный элемент и удалить у него класс
+    const currentActiveItem = document.querySelector('.dropdown__item-active');
+    if (currentActiveItem) {
+        currentActiveItem.classList.remove('dropdown__item-active');
+        
+        // Удалить класс активной стрелки у текущего активного элемента
+        const currentArrow = currentActiveItem.querySelector('.dropdown__link-arrow');
+        if (currentArrow) {
+            currentArrow.classList.remove('active');
+        }
+    }
+
+    // Найти активный элемент и добавить класс
+    const newActiveItem = activeLink.closest('.dropdown__item');
+    newActiveItem.classList.add('dropdown__item-active');
+    
+    // Добавить класс активной стрелке
+    const arrow = newActiveItem.querySelector('.dropdown__link-arrow');
+    if (arrow) {
+        arrow.classList.add('active');
+    }
+}
+
+// Пример использования функции при клике на элемент
+document.querySelectorAll('.dropdown__link').forEach(link => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault(); // Предотвращение перехода по ссылке
+        updateActiveLink(link);
+    });
 });
 
-const paginationButtons = pagination.querySelectorAll('button');
-updatePagination();
-
-function goToSlide(index) {
-slides.style.transform = `translateX(-${index * 100}%)`;
-currentIndex = index;
-updatePagination();
+// Инициализация: сделаем Business активным по умолчанию
+const defaultActiveLink = document.querySelector('#businessMenu .dropdown__link');
+if (defaultActiveLink) {
+    updateActiveLink(defaultActiveLink);
 }
 
-function updatePagination() {
-paginationButtons.forEach((button, index) => {
-button.classList.toggle('active', index === currentIndex);
+
+    // Toggle dropdown menu
+    bestDealsArrow.addEventListener('click', (event) => {
+        event.stopPropagation();
+        dropdownContainer.classList.toggle('open');
+        bestDealsArrow.classList.toggle('rotate');
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', (event) => {
+        if (!dropdownContainer.contains(event.target) && !bestDealsLink.contains(event.target)) {
+            dropdownContainer.classList.remove('open');
+            bestDealsArrow.classList.remove('rotate');
+        }
+    });
+
+    // Event listeners for dropdown links
+    dropdownLinks.forEach((link) => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault();
+            updateActiveLink(link);
+
+            const linkText = link.textContent.trim();
+            if (slideContainers[linkText]) {
+                showSlider(slideContainers[linkText]);
+            }
+        });
+    });
+
+    // Инициализация слайдера для каждого блока слайдов
+    function initSlider(slider) {
+        const slides = slider.querySelector('.dropdown__slides');
+        const slide = slider.querySelectorAll('.dropdown__slide');
+        const prevButton = slider.querySelector('.dropdown__nav-btn.prev');
+        const nextButton = slider.querySelector('.dropdown__nav-btn.next');
+        const pagination = slider.querySelector('.dropdown__pagination');
+        let currentIndex = 0;
+
+        // Создание кнопок пагинации
+        slide.forEach((_, index) => {
+            const button = document.createElement('button');
+            button.addEventListener('click', () => goToSlide(index));
+            pagination.appendChild(button);
+        });
+
+        const paginationButtons = pagination.querySelectorAll('button');
+        updatePagination(paginationButtons, currentIndex);
+
+        function goToSlide(index) {
+            slides.style.transform = `translateX(-${index * 100}%)`;
+            currentIndex = index;
+            updatePagination(paginationButtons, currentIndex);
+        }
+
+        function updatePagination(buttons, currentIndex) {
+            buttons.forEach((button, index) => {
+                button.classList.toggle('active', index === currentIndex);
+            });
+        }
+
+        function showNextSlide() {
+            currentIndex = (currentIndex + 1) % slide.length;
+            goToSlide(currentIndex);
+        }
+
+        function showPrevSlide() {
+            currentIndex = (currentIndex - 1 + slide.length) % slide.length;
+            goToSlide(currentIndex);
+        }
+
+        nextButton.addEventListener('click', showNextSlide);
+        prevButton.addEventListener('click', showPrevSlide);
+    }
+
+    // Инициализация всех слайдеров
+    sliders.forEach(initSlider);
+
+    // Показать начальный слайдер (Business)
+    showSlider(slideContainers['Business']);
 });
-}
 
-function showNextSlide() {
-currentIndex = (currentIndex + 1) % slide.length;
-goToSlide(currentIndex);
-}
 
-function showPrevSlide() {
-currentIndex = (currentIndex - 1 + slide.length) % slide.length;
-goToSlide(currentIndex);
-}
 
-nextButton.addEventListener('click', showNextSlide);
-prevButton.addEventListener('click', showPrevSlide);
 
 // // Auto-play functionality (optional)
 // // setInterval(showNextSlide, 5000);

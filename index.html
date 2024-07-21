@@ -20,69 +20,293 @@
                 <nav class="nav">
                     <ul class="nav__list list-reset">
                         <li class="nav__item nav__link-option">
-                            <a href="#" class="nav__link" id="bestDealsLink">Best Deals</a>
-                        <div class="dropdown__container">
-                            <div class="dropdown__block-left">
-                                <ul class="list-reset dropdown__list">
-                                    <li class="dropdown__item dropdown__item-active">
-                                        <a href="#" class="dropdown__link dropdown__link-active">Business</a>
-                                    </li>
-                                    <li class="dropdown__item">
-                                        <a href="#" class="dropdown__link">First Class</a>
-                                    </li>
-                                    <li class="dropdown__item">
-                                        <a href="#" class="dropdown__link">Premium</a>
-                                    </li>
-                                </ul>
-                                <a href="#" class="dropdown__link-view">View All</a>
-                            </div>
-                            <div class="dropdown__block-right">
-                                <div class="dropdown__slider">
-                                    <div class="dropdown__slides">
-                                        <div class="dropdown__slide">
-                                            <img src="img/drop-img.png" alt="Slide 1">
-                                            <div class="dropdown__slide-featured">
-                                                <div class="dropdown__slide-featured--left">
-                                                    <span>Featured</span>
-                                                </div>
-                                                <div class="dropdown__slide-featured--right">
-                                                    -42%
-                                                </div>
-                                            </div>
-                                            <div class="dropdown__slide-descr">
-                                                <div class="dropdown__slide-descr--left">
-                                                    <span class="dropdown__slide-class">first class flights to</span>
-                                                    <h4 class="dropdown__slide-town">Dubai</h4>
-                                                </div>
-                                                <div class="dropdown__slide-descr--right">
-                                                    <div class="dropdown__slide-price">
-                                                        <span class="dropdown__slide-old">$2,486</span>
-                                                        <span class="dropdown__slide-new">$1,256</span>
-                                                    </div>
-                                                    <a href="#" class="dropdown__slide-link"></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="dropdown__slide">
-                                            <img src="img/drop-img.png" alt="Slide 2">
-                                        </div>
-                                        <div class="dropdown__slide">
-                                            <img src="img/drop-img.png" alt="Slide 3">
-                                        </div>
-                                    </div>
-                                    <div class="dropdown__pagination"></div>
-                                    <div class="dropdown__nav-btn prev"><img src="img/arrow-prev.png" alt="Prev"></div>
-                                    <div class="dropdown__nav-btn next"><img src="img/arrow-next.png" alt="Next"></div>
+                            <a href="#" class="nav__link dropdown__nav-link" id="bestDealsLink">Best Deals</a>
+                            <span class="dropdown__arrow" id="bestDealsArrow"></span>
+                            <div class="dropdown__container" id="dropdownContainer">
+                                <div class="dropdown__block-left">
+                                    <ul class="list-reset dropdown__list">
+                                        <li class="dropdown__item dropdown__item-active" id="businessMenu">
+                                            <a href="#" class="dropdown__link">Business</a>
+                                            <svg class="dropdown__link-arrow" width="6" height="11" viewBox="0 0 6 11" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M-1.13054e-07 9.325L3.71159 5.5L-4.47446e-07 1.675L1.14825 0.5L6 5.5L1.14825 10.5L-1.13054e-07 9.325Z" />
+                                            </svg>
+                                        </li>
+                                        <li class="dropdown__item">
+                                            <a href="#" class="dropdown__link">First Class</a>
+                                            <svg class="dropdown__link-arrow" width="6" height="11" viewBox="0 0 6 11" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M-1.13054e-07 9.325L3.71159 5.5L-4.47446e-07 1.675L1.14825 0.5L6 5.5L1.14825 10.5L-1.13054e-07 9.325Z" />
+                                            </svg>
+                                        </li>
+                                        <li class="dropdown__item">
+                                            <a href="#" class="dropdown__link">Premium</a>
+                                            <svg class="dropdown__link-arrow" width="6" height="11" viewBox="0 0 6 11" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M-1.13054e-07 9.325L3.71159 5.5L-4.47446e-07 1.675L1.14825 0.5L6 5.5L1.14825 10.5L-1.13054e-07 9.325Z" />
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="dropdown__link-view">View All</a>
+
                                 </div>
+                                <div class="dropdown__block-right">
+                                    <div class="dropdown__slider active" id="businessSlider">
+                                        <div class="dropdown__slides">
+                                            <div class="dropdown__slide">
+                                                <img src="img/drop-img.png" alt="Business Slide 1">
+                                                <div class="dropdown__slide-featured">
+                                                    <div class="dropdown__slide-featured--left">
+                                                        <span>Featured</span>
+                                                    </div>
+                                                    <div class="dropdown__slide-featured--right">
+                                                        -42%
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown__slide-descr">
+                                                    <div class="dropdown__slide-descr--left">
+                                                        <span class="dropdown__slide-class">first class flights to</span>
+                                                        <h4 class="dropdown__slide-town">Dubai</h4>
+                                                    </div>
+                                                    <div class="dropdown__slide-descr--right">
+                                                        <div class="dropdown__slide-price">
+                                                            <span class="dropdown__slide-old">$2,486</span>
+                                                            <span class="dropdown__slide-new">$1,256</span>
+                                                        </div>
+                                                        <a href="#" class="dropdown__slide-link"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown__slide">
+                                                <img src="img/drop-img.png" alt="Business Slide 2">
+                                                <div class="dropdown__slide-featured">
+                                                    <div class="dropdown__slide-featured--left">
+                                                        <span>Featured</span>
+                                                    </div>
+                                                    <div class="dropdown__slide-featured--right">
+                                                        -42%
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown__slide-descr">
+                                                    <div class="dropdown__slide-descr--left">
+                                                        <span class="dropdown__slide-class">first class flights to</span>
+                                                        <h4 class="dropdown__slide-town">Dubai</h4>
+                                                    </div>
+                                                    <div class="dropdown__slide-descr--right">
+                                                        <div class="dropdown__slide-price">
+                                                            <span class="dropdown__slide-old">$2,486</span>
+                                                            <span class="dropdown__slide-new">$1,256</span>
+                                                        </div>
+                                                        <a href="#" class="dropdown__slide-link"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown__slide">
+                                                <img src="img/drop-img.png" alt="Business Slide 3">
+                                                <div class="dropdown__slide-featured">
+                                                    <div class="dropdown__slide-featured--left">
+                                                        <span>Featured</span>
+                                                    </div>
+                                                    <div class="dropdown__slide-featured--right">
+                                                        -42%
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown__slide-descr">
+                                                    <div class="dropdown__slide-descr--left">
+                                                        <span class="dropdown__slide-class">first class flights to</span>
+                                                        <h4 class="dropdown__slide-town">Dubai</h4>
+                                                    </div>
+                                                    <div class="dropdown__slide-descr--right">
+                                                        <div class="dropdown__slide-price">
+                                                            <span class="dropdown__slide-old">$2,486</span>
+                                                            <span class="dropdown__slide-new">$1,256</span>
+                                                        </div>
+                                                        <a href="#" class="dropdown__slide-link"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- More Business slides if needed -->
+                                        </div>
+                                        <div class="dropdown__pagination"></div>
+                                        <div class="dropdown__nav-btn prev"><img src="img/arrow-prev.png" alt="Prev"></div>
+                                        <div class="dropdown__nav-btn next"><img src="img/arrow-next.png" alt="Next"></div>
+                                    </div>
                                 
+                                    <div class="dropdown__slider" id="firstClassSlider">
+                                        <div class="dropdown__slides">
+                                            <div class="dropdown__slide">
+                                                <img src="img/drop-img.png" alt="First Class Slide 1">
+                                                <div class="dropdown__slide-featured">
+                                                    <div class="dropdown__slide-featured--left">
+                                                        <span>Featured</span>
+                                                    </div>
+                                                    <div class="dropdown__slide-featured--right">
+                                                        -42%
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown__slide-descr">
+                                                    <div class="dropdown__slide-descr--left">
+                                                        <span class="dropdown__slide-class">first class flights to</span>
+                                                        <h4 class="dropdown__slide-town">Toronto</h4>
+                                                    </div>
+                                                    <div class="dropdown__slide-descr--right">
+                                                        <div class="dropdown__slide-price">
+                                                            <span class="dropdown__slide-old">$2,486</span>
+                                                            <span class="dropdown__slide-new">$1,256</span>
+                                                        </div>
+                                                        <a href="#" class="dropdown__slide-link"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown__slide">
+                                                <img src="img/drop-img.png" alt="First Class Slide 2">
+                                                <div class="dropdown__slide-featured">
+                                                    <div class="dropdown__slide-featured--left">
+                                                        <span>Featured</span>
+                                                    </div>
+                                                    <div class="dropdown__slide-featured--right">
+                                                        -42%
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown__slide-descr">
+                                                    <div class="dropdown__slide-descr--left">
+                                                        <span class="dropdown__slide-class">first class flights to</span>
+                                                        <h4 class="dropdown__slide-town">Dubai</h4>
+                                                    </div>
+                                                    <div class="dropdown__slide-descr--right">
+                                                        <div class="dropdown__slide-price">
+                                                            <span class="dropdown__slide-old">$2,486</span>
+                                                            <span class="dropdown__slide-new">$1,256</span>
+                                                        </div>
+                                                        <a href="#" class="dropdown__slide-link"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown__slide">
+                                                <img src="img/drop-img.png" alt="First Class Slide 3">
+                                                <div class="dropdown__slide-featured">
+                                                    <div class="dropdown__slide-featured--left">
+                                                        <span>Featured</span>
+                                                    </div>
+                                                    <div class="dropdown__slide-featured--right">
+                                                        -42%
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown__slide-descr">
+                                                    <div class="dropdown__slide-descr--left">
+                                                        <span class="dropdown__slide-class">first class flights to</span>
+                                                        <h4 class="dropdown__slide-town">Dubai</h4>
+                                                    </div>
+                                                    <div class="dropdown__slide-descr--right">
+                                                        <div class="dropdown__slide-price">
+                                                            <span class="dropdown__slide-old">$2,486</span>
+                                                            <span class="dropdown__slide-new">$1,256</span>
+                                                        </div>
+                                                        <a href="#" class="dropdown__slide-link"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- More First Class slides if needed -->
+                                        </div>
+                                        <div class="dropdown__pagination"></div>
+                                        <div class="dropdown__nav-btn prev"><img src="img/arrow-prev.png" alt="Prev"></div>
+                                        <div class="dropdown__nav-btn next"><img src="img/arrow-next.png" alt="Next"></div>
+                                    </div>
+
+                                    <div class="dropdown__slider" id="premiumSlider">
+                                        <div class="dropdown__slides">
+                                            <div class="dropdown__slide">
+                                                <img src="img/drop-img.png" alt="Premium Slide 1">
+                                                <div class="dropdown__slide-featured">
+                                                    <div class="dropdown__slide-featured--left">
+                                                        <span>Featured</span>
+                                                    </div>
+                                                    <div class="dropdown__slide-featured--right">
+                                                        -42%
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown__slide-descr">
+                                                    <div class="dropdown__slide-descr--left">
+                                                        <span class="dropdown__slide-class">premium flights to</span>
+                                                        <h4 class="dropdown__slide-town">Mumbai</h4>
+                                                    </div>
+                                                    <div class="dropdown__slide-descr--right">
+                                                        <div class="dropdown__slide-price">
+                                                            <span class="dropdown__slide-old">$2,486</span>
+                                                            <span class="dropdown__slide-new">$1,256</span>
+                                                        </div>
+                                                        <a href="#" class="dropdown__slide-link"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown__slide">
+                                                <img src="img/drop-img.png" alt="Premium Slide 2">
+                                                <div class="dropdown__slide-featured">
+                                                    <div class="dropdown__slide-featured--left">
+                                                        <span>Featured</span>
+                                                    </div>
+                                                    <div class="dropdown__slide-featured--right">
+                                                        -42%
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown__slide-descr">
+                                                    <div class="dropdown__slide-descr--left">
+                                                        <span class="dropdown__slide-class">first class flights to</span>
+                                                        <h4 class="dropdown__slide-town">Dubai</h4>
+                                                    </div>
+                                                    <div class="dropdown__slide-descr--right">
+                                                        <div class="dropdown__slide-price">
+                                                            <span class="dropdown__slide-old">$2,486</span>
+                                                            <span class="dropdown__slide-new">$1,256</span>
+                                                        </div>
+                                                        <a href="#" class="dropdown__slide-link"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown__slide">
+                                                <img src="img/drop-img.png" alt="Premium Slide 3">
+                                                <div class="dropdown__slide-featured">
+                                                    <div class="dropdown__slide-featured--left">
+                                                        <span>Featured</span>
+                                                    </div>
+                                                    <div class="dropdown__slide-featured--right">
+                                                        -42%
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown__slide-descr">
+                                                    <div class="dropdown__slide-descr--left">
+                                                        <span class="dropdown__slide-class">first class flights to</span>
+                                                        <h4 class="dropdown__slide-town">Dubai</h4>
+                                                    </div>
+                                                    <div class="dropdown__slide-descr--right">
+                                                        <div class="dropdown__slide-price">
+                                                            <span class="dropdown__slide-old">$2,486</span>
+                                                            <span class="dropdown__slide-new">$1,256</span>
+                                                        </div>
+                                                        <a href="#" class="dropdown__slide-link"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- More First Class slides if needed -->
+                                        </div>
+                                        <div class="dropdown__pagination"></div>
+                                        <div class="dropdown__nav-btn prev"><img src="img/arrow-prev.png" alt="Prev"></div>
+                                        <div class="dropdown__nav-btn next"><img src="img/arrow-next.png" alt="Next"></div>
+                                    </div>
+                                
+                                    <!-- Add more sliders for other classes if needed -->
+                                </div>
+
                             </div>
-                        </div>
                         </li>
                         <li class="nav__item">
                             <a href="#" class="nav__link">Blog</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#" class="nav__link">About us</a>
+                            <a href="about.html" class="nav__link">About us</a>
                         </li>
                         <li class="nav__item">
                             <a href="#" class="nav__link">Contacts</a>

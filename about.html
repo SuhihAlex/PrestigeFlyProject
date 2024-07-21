@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/settings.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>PrestigeFly</title>
+</head>
+<body class="page__body">
+    <header class="header">
+        <div class="container-field">
+            <div class="header__block">
+                <div class="header__block-logo">
+                    <a href="index.html" class="header__logo-link">
+                        <img src="img/logo.svg" alt="PrestigeFly Logo">
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav__list list-reset">
+                        <li class="nav__item nav__link-option">
+                            <a href="#" class="nav__link dropdown__nav-link" id="bestDealsLink">Best Deals</a>
+                            <span class="dropdown__arrow" id="bestDealsArrow"></span>
+                            <div class="dropdown__container" id="dropdownContainer">
+                                <div class="dropdown__block-left">
+                                    <ul class="list-reset dropdown__list">
+                                        <li class="dropdown__item dropdown__item-active" id="businessMenu">
+                                            <a href="#" class="dropdown__link">Business</a>
+                                            <svg class="dropdown__link-arrow" width="6" height="11" viewBox="0 0 6 11"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M-1.13054e-07 9.325L3.71159 5.5L-4.47446e-07 1.675L1.14825 0.5L6 5.5L1.14825 10.5L-1.13054e-07 9.325Z" />
+                                            </svg>
+                                        </li>
+                                        <li class="dropdown__item">
+                                            <a href="#" class="dropdown__link">First Class</a>
+                                            <svg class="dropdown__link-arrow" width="6" height="11" viewBox="0 0 6 11"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M-1.13054e-07 9.325L3.71159 5.5L-4.47446e-07 1.675L1.14825 0.5L6 5.5L1.14825 10.5L-1.13054e-07 9.325Z" />
+                                            </svg>
+                                        </li>
+                                        <li class="dropdown__item">
+                                            <a href="#" class="dropdown__link">Premium</a>
+                                            <svg class="dropdown__link-arrow" width="6" height="11" viewBox="0 0 6 11"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M-1.13054e-07 9.325L3.71159 5.5L-4.47446e-07 1.675L1.14825 0.5L6 5.5L1.14825 10.5L-1.13054e-07 9.325Z" />
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="dropdown__link-view">View All</a>
+    
+                                </div>
+                                <div class="dropdown__block-right">
+                                    <div class="dropdown__slider active" id="businessSlider">
+                                        <div class="dropdown__slides">
+                                            <div class="dropdown__slide">
+                                                <img src="img/drop-img.png" alt="Business Slide 1">
+                                                <div class="dropdown__slide-featured">
+                                                    <div class="dropdown__slide-featured--left">
+                                                        <span>Featured</span>
+                                                    </div>
+                                                    <div class="dropdown__slide-featured--right">
+                                                        -42%
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown__slide-descr">
+                                                    <div class="dropdown__slide-descr--left">
+                                                        <span class="dropdown__slide-class">first class flights to</span>
+                                                        <h4 class="dropdown__slide-town">Dubai</h4>
+                                                    </div>
+                                                    <div class="dropdown__slide-descr--right">
+                                                        <div class="dropdown__slide-price">
+                                                            <span class="dropdown__slide-old">$2,486</span>
+                                                            <span class="dropdown__slide-new">$1,256</span>
+                                                        </div>
+                                                        <a href="#" class="dropdown__slide-link"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown__slide">
+                                                <img src="img/drop-img.png" alt="Business Slide 2">
+                                                <div class="dropdown__slide-featured">
+                                                    <div class="dropdown__slide-featured--left">
+                                                        <span>Featured</span>
+                                                    </div>
+                                                    <div class="dropdown__slide-featured--right">
+                                                        -42%
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown__slide-descr">
+                                                    <div class="dropdown__slide-descr--left">
+                                                        <span class="dropdown__slide-class">first class flights to</span>
+                                                        <h4 class="dropdown__slide-town">Dubai</h4>
+                                                    </div>
+                                                    <div class="dropdown__slide-descr--right">
+                                                        <div class="dropdown__slide-price">
+                                                            <span class="dropdown__slide-old">$2,486</span>
+                                                            <span class="dropdown__slide-new">$1,256</span>
+                                                        </div>
+                                                        <a href="#" class="dropdown__slide-link"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown__slide">
+                                                <img src="img/drop-img.png" alt="Business Slide 3">
+                                                <div class="dropdown__slide-featured">
+                                                    <div class="dropdown__slide-featured--left">
+                                                        <span>Featured</span>
+                                                    </div>
+                                                    <div class="dropdown__slide-featured--right">
+                                                        -42%
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown__slide-descr">
+                                                    <div class="dropdown__slide-descr--left">
+                                                        <span class="dropdown__slide-class">first class flights to</span>
+                                                        <h4 class="dropdown__slide-town">Dubai</h4>
+                                                    </div>
+                                                    <div class="dropdown__slide-descr--right">
+                                                        <div class="dropdown__slide-price">
+                                                            <span class="dropdown__slide-old">$2,486</span>
+                                                            <span class="dropdown__slide-new">$1,256</span>
+                                                        </div>
+                                                        <a href="#" class="dropdown__slide-link"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- More Business slides if needed -->
+                                        </div>
+                                        <div class="dropdown__pagination"></div>
+                                        <div class="dropdown__nav-btn prev"><img src="img/arrow-prev.png" alt="Prev"></div>
+                                        <div class="dropdown__nav-btn next"><img src="img/arrow-next.png" alt="Next"></div>
+                                    </div>
+    
+                                    <div class="dropdown__slider" id="firstClassSlider">
+                                        <div class="dropdown__slides">
+                                            <div class="dropdown__slide">
+                                                <img src="img/drop-img.png" alt="First Class Slide 1">
+                                                <div class="dropdown__slide-featured">
+                                                    <div class="dropdown__slide-featured--left">
+                                                        <span>Featured</span>
+                                                    </div>
+                                                    <div class="dropdown__slide-featured--right">
+                                                        -42%
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown__slide-descr">
+                                                    <div class="dropdown__slide-descr--left">
+                                                        <span class="dropdown__slide-class">first class flights to</span>
+                                                        <h4 class="dropdown__slide-town">Toronto</h4>
+                                                    </div>
+                                                    <div class="dropdown__slide-descr--right">
+                                                        <div class="dropdown__slide-price">
+                                                            <span class="dropdown__slide-old">$2,486</span>
+                                                            <span class="dropdown__slide-new">$1,256</span>
+                                                        </div>
+                                                        <a href="#" class="dropdown__slide-link"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown__slide">
+                                                <img src="img/drop-img.png" alt="First Class Slide 2">
+                                                <div class="dropdown__slide-featured">
+                                                    <div class="dropdown__slide-featured--left">
+                                                        <span>Featured</span>
+                                                    </div>
+                                                    <div class="dropdown__slide-featured--right">
+                                                        -42%
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown__slide-descr">
+                                                    <div class="dropdown__slide-descr--left">
+                                                        <span class="dropdown__slide-class">first class flights to</span>
+                                                        <h4 class="dropdown__slide-town">Dubai</h4>
+                                                    </div>
+                                                    <div class="dropdown__slide-descr--right">
+                                                        <div class="dropdown__slide-price">
+                                                            <span class="dropdown__slide-old">$2,486</span>
+                                                            <span class="dropdown__slide-new">$1,256</span>
+                                                        </div>
+                                                        <a href="#" class="dropdown__slide-link"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown__slide">
+                                                <img src="img/drop-img.png" alt="First Class Slide 3">
+                                                <div class="dropdown__slide-featured">
+                                                    <div class="dropdown__slide-featured--left">
+                                                        <span>Featured</span>
+                                                    </div>
+                                                    <div class="dropdown__slide-featured--right">
+                                                        -42%
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown__slide-descr">
+                                                    <div class="dropdown__slide-descr--left">
+                                                        <span class="dropdown__slide-class">first class flights to</span>
+                                                        <h4 class="dropdown__slide-town">Dubai</h4>
+                                                    </div>
+                                                    <div class="dropdown__slide-descr--right">
+                                                        <div class="dropdown__slide-price">
+                                                            <span class="dropdown__slide-old">$2,486</span>
+                                                            <span class="dropdown__slide-new">$1,256</span>
+                                                        </div>
+                                                        <a href="#" class="dropdown__slide-link"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- More First Class slides if needed -->
+                                        </div>
+                                        <div class="dropdown__pagination"></div>
+                                        <div class="dropdown__nav-btn prev"><img src="img/arrow-prev.png" alt="Prev"></div>
+                                        <div class="dropdown__nav-btn next"><img src="img/arrow-next.png" alt="Next"></div>
+                                    </div>
+    
+                                    <div class="dropdown__slider" id="premiumSlider">
+                                        <div class="dropdown__slides">
+                                            <div class="dropdown__slide">
+                                                <img src="img/drop-img.png" alt="Premium Slide 1">
+                                                <div class="dropdown__slide-featured">
+                                                    <div class="dropdown__slide-featured--left">
+                                                        <span>Featured</span>
+                                                    </div>
+                                                    <div class="dropdown__slide-featured--right">
+                                                        -42%
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown__slide-descr">
+                                                    <div class="dropdown__slide-descr--left">
+                                                        <span class="dropdown__slide-class">premium flights to</span>
+                                                        <h4 class="dropdown__slide-town">Mumbai</h4>
+                                                    </div>
+                                                    <div class="dropdown__slide-descr--right">
+                                                        <div class="dropdown__slide-price">
+                                                            <span class="dropdown__slide-old">$2,486</span>
+                                                            <span class="dropdown__slide-new">$1,256</span>
+                                                        </div>
+                                                        <a href="#" class="dropdown__slide-link"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown__slide">
+                                                <img src="img/drop-img.png" alt="Premium Slide 2">
+                                                <div class="dropdown__slide-featured">
+                                                    <div class="dropdown__slide-featured--left">
+                                                        <span>Featured</span>
+                                                    </div>
+                                                    <div class="dropdown__slide-featured--right">
+                                                        -42%
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown__slide-descr">
+                                                    <div class="dropdown__slide-descr--left">
+                                                        <span class="dropdown__slide-class">first class flights to</span>
+                                                        <h4 class="dropdown__slide-town">Dubai</h4>
+                                                    </div>
+                                                    <div class="dropdown__slide-descr--right">
+                                                        <div class="dropdown__slide-price">
+                                                            <span class="dropdown__slide-old">$2,486</span>
+                                                            <span class="dropdown__slide-new">$1,256</span>
+                                                        </div>
+                                                        <a href="#" class="dropdown__slide-link"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown__slide">
+                                                <img src="img/drop-img.png" alt="Premium Slide 3">
+                                                <div class="dropdown__slide-featured">
+                                                    <div class="dropdown__slide-featured--left">
+                                                        <span>Featured</span>
+                                                    </div>
+                                                    <div class="dropdown__slide-featured--right">
+                                                        -42%
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown__slide-descr">
+                                                    <div class="dropdown__slide-descr--left">
+                                                        <span class="dropdown__slide-class">first class flights to</span>
+                                                        <h4 class="dropdown__slide-town">Dubai</h4>
+                                                    </div>
+                                                    <div class="dropdown__slide-descr--right">
+                                                        <div class="dropdown__slide-price">
+                                                            <span class="dropdown__slide-old">$2,486</span>
+                                                            <span class="dropdown__slide-new">$1,256</span>
+                                                        </div>
+                                                        <a href="#" class="dropdown__slide-link"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- More First Class slides if needed -->
+                                        </div>
+                                        <div class="dropdown__pagination"></div>
+                                        <div class="dropdown__nav-btn prev"><img src="img/arrow-prev.png" alt="Prev"></div>
+                                        <div class="dropdown__nav-btn next"><img src="img/arrow-next.png" alt="Next"></div>
+                                    </div>
+    
+                                    <!-- Add more sliders for other classes if needed -->
+                                </div>
+    
+                            </div>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Blog</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link">About us</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="contact__info">
+                    <a href="tel:3055048935" class="contact__info-link"><img src="img/phone.svg" alt="Phone">(305)
+                        504-8935</a>
+                    <button class="btn-reset contact__info-btn">Request a Call 24/7</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="modal">
+        <div class="modal__block">
+            <img src="img/modal-img.png" alt="Modal Image">
+            <div class="modal__content">
+                <div class="modal__content-title">
+                    <h4 class="modal__title">Call to Speak</h4>
+                    <p class="modal__subtitle">Live concierge available 24/7</p>
+                    <a href="tel:3055048935" class="modal__tel">(305) 504 - 8935</a>
+                </div>
+                <div class="modal__content-request">
+                    <div class="modal__content-request--title">
+                        <h4 class="modal__title">Request a free callback</h4>
+                        <p class="modal__subtitle">Get a call from travel expert and free advice within minutes.</p>
+                    </div>
+                    <form class="modal__form">
+                        <div class="modal__block-phone">
+                            <label for="phone" class="modal__form-label">Phone</label>
+                            <input type="tel" class="modal__form-phone" placeholder="Enter Your Phone">
+                        </div>
+                        <button class="modal__btn btn-reset" type="submit">Request now</button>
+                    </form>
+                    <div class="modal__block-text">
+                        <p class="modal__text">
+                            *One of our Travel Agents will call you back within the next few minutes. By submitting your
+                            phone numbers you agree to
+                            be contacted for travel information via automated phone and text messages. Your consest to
+                            recieve such messages is not
+                            a condition of purchase. No Spam & 100% Data Safety
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal__close">
+            <span></span>
+        </div>
+    </div>
+    <main>
+        <section class="hero hero__about-page">
+            <div class="container">
+                <div class="hero__block hero__block-about">
+                    <div class="hero__content hero__content-about">
+                        <h1 class="hero__title hero__title-about">About Us</h1>
+                        <p class="hero__subtitle hero__subtitle-about">Fly in comfort & feel the difference with us</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chat__widget chat__none">
+                <div class="chat__header" id="chatHeader">
+                </div>
+                <div class="chat__content" id="chatContent">
+                    <div class="messages" id="messages">
+                        <!-- Здесь будут сообщения -->
+                    </div>
+                    <div class="chat__input">
+                        <input type="text" id="chatInput" placeholder="Type a message...">
+                        <button class="chat__btn" id="sendButton">Send</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team">
+            <div class="container">
+                <div class="team__block">
+                    <img src="img/about-page/team-about-img.png" alt="Team Image">
+                    <div class="team__content">
+                        <div class="team__block-title">
+                            <p class="team__subtitle">Who We Are</p>
+                            <h2 class="team__title"><span>PrestigeFly</span> Team</h2>
+                        </div>
+                        <p class="team__descr">
+                            We are dedicated to delivering exceptional private concierge service to all our clients, available 24/7. Please feel
+                            free to contact PrestigeFly Managers at any time via phone or email with any inquiries or issues. We're excited and
+                            ready to help you!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="journey">
+            <div class="journey__block-top">
+                <div class="container">
+                    <div class="journey__top-content">
+                        <h3 class="journey__top-title">Elevate Your Journey!</h3>
+                        <p class="journey__top-descr">At PrestigeFly, we believe that every journey should be a remarkable experience from start to finish. As purveyors of
+                        premium flight tickets, we have made it our mission to redefine the way you travel, offering nothing short of excellence
+                        and luxury.</p>
+                        <a href="#" class="journey__top-link">Contact Us</a>
+                    </div>
+                    <img src="img/about-page/journey-img.png" alt="Image">
+                </div>
+            </div>
+                <div class="journey__block-bottom">
+                    <div class="container">
+                        <div class="journey__bottom-block">
+                            <img src="img/about-page/journey-img-2.png" alt="Image 2">
+                            <div class="journey__bottom-content">
+                                <h3 class="journey__bottom-title">Experience the Extraordinary:</h3>
+                                <p class="journey__bottom-subtitle">From the moment you step foot into our world, you'll realize that PrestigeFly is more than just a travel provider; it's
+                                an invitation to embark on a transformative journey. Whether you're jetting off for a business venture or an exotic
+                                escapade, let us take the reins and transform your travel dreams into an extraordinary reality.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="stats">
+            <div class="container">
+                <div class="stats__block">
+                    <ul class="stats__list list-reset">
+                        <li class="stats__item">
+                            <span class="stats__num">$2,250</span>
+                            <h4 class="stats__name">AVERAGE SAVINGS PER TICKET</h4>
+                        </li>
+                        <li class="stats__item">
+                            <span class="stats__num">70,100+</span>
+                            <h4 class="stats__name">TICKETS SOLD ANNUALLY</h4>
+                        </li>
+                        <li class="stats__item">
+                            <span class="stats__num">91%</span>
+                            <h4 class="stats__name">REPEAT CUSTOMERS</h4>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="about__benefits">
+            <div class="container">
+                <div class="about__benefits-block">
+                    <div class="work__block-title benefits__block-title">
+                        <h2 class="work__title benefits__title about__benefits-title">Exclusive Benefits</h2>
+                    </div>
+                    <ul class="about__benefits-list list-reset">
+                        <li class="about__benefits-item">
+                            <img src="img/benefits/premium-icon.svg" alt="Luxury">
+                            <div class="about__benefits-group">
+                                <h4 class="about__benefits-group--title">Luxury In-Flight Experience</h4>
+                                <p class="about__benefits-descr">
+                                    Recline in comfort on your premium seat, designed for maximum relaxation during your flight. Immerse yourself in an
+                                    unparalleled luxury experience with fine dining, top-shelf beverages, and a selection of entertainment tailored to your
+                                    preferences.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="about__benefits-item">
+                            <img src="img/benefits/booking-icon.svg" alt="Service">
+                            <div class="about__benefits-group">
+                                <h4 class="about__benefits-group--title">Personalized Concierge Service</h4>
+                                <p class="about__benefits-descr">
+                                    Experience the epitome of personalized service with a dedicated concierge team at your disposal. From itinerary
+                                    customization to last-minute requests, our experts are committed to fulfilling your every travel desire.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="about__benefits-item">
+                            <img src="img/benefits/support-icon.svg" alt="Support">
+                            <div class="about__benefits-group">
+                                <h4 class="about__benefits-group--title">Personalized Concierge Service</h4>
+                                <p class="about__benefits-descr">
+                                    Experience the epitome of personalized service with a dedicated concierge team at your disposal. From
+                                    itinerary
+                                    customization to last-minute requests, our experts are committed to fulfilling your every travel desire.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="about__benefits-item">
+                            <img src="img/benefits/booking-icon.svg" alt="Service">
+                            <div class="about__benefits-group">
+                                <h4 class="about__benefits-group--title">Exclusive Lounge Access</h4>
+                                <p class="about__benefits-descr">
+                                    Experience the epitome of personalized service with a dedicated concierge team at your disposal. From
+                                    itinerary
+                                    customization to last-minute requests, our experts are committed to fulfilling your every travel desire.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="about__benefits-block--link">
+                        <a href="#" class="about__benefits-link">Request a Quote</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials">
+            <div class="container">
+                <div class="info__block-title">
+                    <p class="info__text">Testimonials</p>
+                    <h3 class="info__title">Why Travelers Love PrestigeFly</h3>
+                </div>
+                <div class="slider__control-block slider__control-block--testi">
+                    <button class="slider__control prev slider__control-prev slider__control-testi"><img
+                            src="img/arrow-link.svg" alt="Arrow Prev"></button>
+                    <button class="slider__control next active slider__control-testi"><img src="img/arrow-link.svg"
+                            alt="Arrow Next"></button>
+                </div>
+            </div>
+            <div class="slider__container-testi">
+                <div class="slider__wrapper-testi">
+                    <div class="slider__item-testi">
+                        <div class="slider__item-content">
+                            <h4 class="slider__item-title">
+                                "Booking my premium flights through PrestigeFly was an absolute game-changer!
+                            </h4>
+                            <p class="slider__item-descr">
+                                I was amazed by the level of personalized service they offered. The team was incredibly helpful,
+                                understanding my
+                                preferences and ensuring I got the best deals available. The entire experience was smooth, and I
+                                couldn't be happier
+                                with the flight choices they presented. For anyone seeking a premium travel experience, I highly
+                                recommend giving
+                                PrestigeFly a try.”
+                            </p>
+                        </div>
+                        <div class="slider__block-user">
+                            <img class="slider__avatar" src="img/testi/Sarah.png" alt="Sarah K">
+                            <div class="slider__block-info">
+                                <h6 class="slider__name">Sarah K</h6>
+                                <span class="slider__date">July 28, 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__item-testi">
+                        <div class="slider__item-content">
+                            <h4 class="slider__item-title">
+                                "Absolutely thrilled with my experience using PrestigeFly! 
+                            </h4>
+                            <p class="slider__item-descr">
+                                From start to finish, their service was exceptional. Booking premium flights was a breeze,
+                                thanks to their knowledgeable
+                                and friendly team. They went above and beyond to secure the best deals for me, and the entire
+                                process was seamless.
+                                Highly recommend PrestigeFly for anyone seeking top-notch service and premium travel options!"
+                            </p>
+                        </div>
+                        <div class="slider__block-user">
+                            <img class="slider__avatar" src="img/testi/John.png" alt="John V">
+                            <div class="slider__block-info">
+                                <h6 class="slider__name">John V</h6>
+                                <span class="slider__date">August 03, 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__item-testi">
+                        <div class="slider__item-content">
+                            <h4 class="slider__item-title">
+                                "I had an amazing experience booking premium flights through PrestigeFly!
+                            </h4>
+                            <p class="slider__item-descr">
+                                The service was outstanding, and the team really went the extra mile to tailor my travel plans
+                                to perfection. Their
+                                expertise in securing premium deals is commendable. The process was effortless, and I felt
+                                confident knowing that I was
+                                getting the best possible options. I highly recommend PrestigeFly to anyone looking for a
+                                luxurious travel experience. ”
+                            </p>
+                        </div>
+                        <div class="slider__block-user">
+                            <img class="slider__avatar" src="img/testi/Alex.png" alt="Alex L">
+                            <div class="slider__block-info">
+                                <h6 class="slider__name">Alex L</h6>
+                                <span class="slider__date">March 01, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__item-testi">
+                        <div class="slider__item-content">
+                            <h4 class="slider__item-title">
+                                "I had an amazing experience booking premium flights through PrestigeFly!
+                            </h4>
+                            <p class="slider__item-descr">
+                                The service was outstanding, and the team really went the extra mile to tailor my travel plans
+                                to
+                                perfection. Their
+                                expertise in securing premium deals is commendable. The process was effortless, and I felt
+                                confident knowing
+                                that I was
+                                getting the best possible options. I highly recommend PrestigeFly to anyone looking for a
+                                luxurious travel
+                                experience. ”
+                            </p>
+                        </div>
+                        <div class="slider__block-user">
+                            <img class="slider__avatar" src="img/testi/Alex.png" alt="Alex L">
+                            <div class="slider__block-info">
+                                <h6 class="slider__name">Alex L</h6>
+                                <span class="slider__date">March 01, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__controls slider__controls-testi">
+            </div>
+        </section>
+        <section class="subscribe">
+            <div class="container">
+                <div class="subscribe__wrapper">
+                    <div class="subscribe__block">
+                        <div class="subscribe__block-title">
+                            <h4 class="subscribe__title">Subscribe to Our Newsletter</h4>
+                            <p class="subscribe__subtitle">Be the first to receive updates on our latest sales and exclusive
+                                offers unavailable online</p>
+                        </div>
+                        <form class="subscribe__form">
+                            <input type="email" class="subscribe__input" placeholder="Enter your email">
+                            <button class="subscribe__btn" type="submit">Subscribe Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__block">
+                <a href="#" class="footer__link">
+                    <img src="img/logo.svg" alt="Logo">
+                </a>
+                <nav class="footer__nav">
+                    <div class="footer__nav-deals">
+                        <h6 class="footer__nav-name">Best Deals</h6>
+                        <ul class="footer__nav-list list-reset">
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">Business</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">First Class</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">Premium</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-explore">
+                        <h6 class="footer__nav-name">Explore</h6>
+                        <ul class="footer__nav-list list-reset">
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">Blog</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-connect">
+                        <h6 class="footer__nav-name">Connect</h6>
+                        <ul class="footer__nav-list list-reset">
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">Contact Us</a>
+                            </li>
+                        </ul>
+                        <div class="footer__contacts-block">
+                            <a href="mail:info@prestigefly.com"
+                                class="footer__contacts footer__contacts-mail">info@prestigefly.com</a>
+                            <a href="tel:3055048935" class="footer__contacts footer__contacts-tel">(305) 504-8935</a>
+                        </div>
+                    </div>
+                    <div class="footer__block-info">
+                        <span class="footer__address">500 E Broward blvd, Ste 1350,
+                            Fort Lauderdale, Florida
+                            33394 Business Travel Group LLC
+                        </span>
+                        <div class="footer__block-socials">
+                            <a href="#" class="social__link">
+                                <img src="img/footer/facebook.svg" alt="Facebook">
+                            </a>
+                            <a href="#" class="social__link">
+                                <img src="img/footer/linkedin.svg" alt="Linkedin">
+                            </a>
+                            <a href="#" class="social__link">
+                                <img src="img/footer/instagram.svg" alt="Instagram">
+                            </a>
+                            <a href="#" class="social__link">
+                                <img src="img/footer/twitter.svg" alt="Twitter">
+                            </a>
+                            <a href="#" class="social__link">
+                                <img src="img/footer/pinterest.svg" alt="Pinterest">
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+                <div class="footer__block-privacy">
+                    <a href="#" class="footer__privacy-link">Terms & Conditions</a>
+                    <a href="#" class="footer__privacy-link">Privacy Policy</a>
+                </div>
+                <div class="footer__block-copy">
+                    <p class="footer__copy">
+                        All displayed fares are quoted in USD and encompass all taxes, fees, and relevant surcharges. Prices
+                        are based on
+                        business class weekday travel (Monday - Thursday) originating from the USA and may vary depending on
+                        the chosen class of
+                        service,departure city, airline, and route. Typically, the lowest transatlantic fares originate from
+                        the East Coast,
+                        transpacific fares from the West Coast, and fares to Latin America from Florida.PrestigeFly may not
+                        list certain travel
+                        partners or specific itinerary details online to avoid direct competition with our partners' retail
+                        sales. Savings of up
+                        to 67% are based on comparisons with the full unrestricted published prices of major airlines and
+                        may fluctuate due to
+                        individual fare rules. Additional baggage charges might be imposed by some airlines. Fares are
+                        subject to seat
+                        availability within the corresponding booking inventory, and seats may be limited or unavailable on
+                        specific flights or
+                        dates. Our fares offer a flexible booking policy allowing free exchange and/or cancellation with our
+                        partner airlines.
+                        In case of trip cancellation, unless otherwise stated, customers will receive travel credit with the
+                        issuing airline for
+                        a period determined by the airline's policy, excluding airline fees. Fare differences may apply in
+                        case of exchanges.
+                        Please note that fares and their governing rules are subject to change without prior notice, and
+                        other restrictions may
+                        also apply.
+                    </p>
+                    <small class="footer__copy">© 2023 — PrestigeFly.com</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js?v=1"></script>
+</body>
+</html>
